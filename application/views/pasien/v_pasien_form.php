@@ -120,7 +120,7 @@
                             <div class="col-md-2">
                                 <div class="form-group">
                                     <label>Jenis Kelamin</label>
-                                    <select name="" class="form-control">
+                                    <select name="form2_3" class="form-control">
                                         <option value="laki-laki">Laki - Laki</option>
                                         <option value="perempuan">Perempuan</option>
                                     </select>
@@ -129,7 +129,7 @@
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label>Kewarganegaraan</label>
-                                    <select name="form2_3" class="form-control">
+                                    <select name="form2_4" class="form-control">
                                         <option value="WNI">WNI</option>
                                         <option value="WNA">WNA</option>
                                     </select>
@@ -140,31 +140,31 @@
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label>Pekerjaan</label>
-                                    <input type="text" class="form-control" name="form2_4" value="">
+                                    <input type="text" class="form-control" name="form2_5" value="">
                                 </div>
                             </div>
                             <div class="col-md-2">
                                 <div class="form-group">
                                     <label>Tempat Lahir</label>
-                                    <input type="text" class="form-control" name="form2_5" value="" requiredss>
+                                    <input type="text" class="form-control" name="form2_6" value="" requiredss>
                                 </div>
                             </div>
                             <div class="col-md-2">
                                 <div class="form-group">
                                     <label>Tanggal Lahir</label>
-                                    <input type="text" class="form-control datepicker" name="form2_6" value="" requiredss>
+                                    <input type="text" class="form-control datepicker" name="form2_7" value="" requiredss>
                                 </div>
                             </div>
                             <div class="col-md-2">
                                 <div class="form-group">
                                     <label>Usia</label>
-                                    <input type="number" class="form-control" name="form2_7" value="" requiredss>
+                                    <input type="number" class="form-control" name="form2_8" value="" requiredss>
                                 </div>
                             </div>
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label>NIK</label>
-                                    <input type="text" class="form-control" name="form2_8" value="" requiredss>
+                                    <input type="text" class="form-control" name="form2_9" value="" requiredss>
                                 </div>
                             </div>
                         </div>
@@ -172,7 +172,7 @@
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label>Provinsi</label>
-                                    <select class="form-control select2" id="provinsi2" style="width: 100%;" name="form2_9" requiredss>
+                                    <select class="form-control select2" id="provinsi2" style="width: 100%;" name="form2_10" requiredss>
                                         <option value='0'>--pilih--</option>
                                         <?php
                                         foreach ($provinsi as $prov2) {
@@ -185,7 +185,7 @@
                             <div class="col-md-2">
                                 <div class="form-group">
                                     <label>Kota/Kab.</label>
-                                    <select class="form-control select2" id="kabupaten-kota2" style="width: 100%;" name="form2_10" requiredss>
+                                    <select class="form-control select2" id="kabupaten-kota2" style="width: 100%;" name="form2_11" requiredss>
                                         <option value='0'>--pilih--</option>
                                     </select>
                                 </div>
@@ -193,7 +193,7 @@
                             <div class="col-md-2">
                                 <div class="form-group">
                                     <label>Kecamatan</label>
-                                    <select class="form-control select2" id="kecamatan2" style="width: 100%;" name="form2_11" requiredss>
+                                    <select class="form-control select2" id="kecamatan2" style="width: 100%;" name="form2_12" requiredss>
                                         <option value='0'>--pilih--</option>
                                     </select>
                                 </div>
@@ -201,7 +201,7 @@
                             <div class="col-md-2">
                                 <div class="form-group">
                                     <label>Kelurahan</label>
-                                    <select class="form-control select2" id="kelurahan-desa2" style="width: 100%;" name="form2_12" requiredss>
+                                    <select class="form-control select2" id="kelurahan-desa2" style="width: 100%;" name="form2_13" requiredss>
                                         <option value='0'>--pilih--</option>
                                     </select>
                                 </div>
@@ -209,7 +209,7 @@
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label>NKK</label>
-                                    <input type="text" class="form-control" name="form2_13" value="">
+                                    <input type="text" class="form-control" name="form2_14" value="">
                                 </div>
                             </div>
                         </div>
@@ -217,19 +217,19 @@
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label>RT</label>
-                                    <input type="text" class="form-control" name="form2_14" value="">
+                                    <input type="text" class="form-control" name="form2_15" value="">
                                 </div>
                             </div>
                             <div class="col-md-2">
                                 <div class="form-group">
                                     <label>RW</label>
-                                    <input type="text" class="form-control" name="form2_15" value="">
+                                    <input type="text" class="form-control" name="form2_16" value="">
                                 </div>
                             </div>
                             <div class="col-md-4">
                                 <div class="form-group">
                                     <label>Jalan</label>
-                                    <input type="text" class="form-control" name="form2_16" value="" requiredss>
+                                    <input type="text" class="form-control" name="form2_17" value="" requiredss>
                                 </div>
                             </div>
                             <div class="col-md-3">
@@ -237,31 +237,31 @@
                                 <div class="form-group">
                                     <div class="radio">
                                         <label>
-                                            <input type="radio" name="form2_17" value="PASIEN DALAM PENGAWASAN">
+                                            <input type="radio" name="form2_18" value="PASIEN DALAM PENGAWASAN">
                                             PASIEN DALAM PENGAWASAN
                                         </label>
                                     </div>
                                     <div class="radio">
                                         <label>
-                                            <input type="radio" name="form2_17" value="ORANG DALAM PEMANTAUAN">
+                                            <input type="radio" name="form2_18" value="ORANG DALAM PEMANTAUAN">
                                             ORANG DALAM PEMANTAUAN
                                         </label>
                                     </div>
                                     <div class="radio">
                                         <label>
-                                            <input type="radio" name="form2_17" value="ORANG TANPA GEJALA">
+                                            <input type="radio" name="form2_18" value="ORANG TANPA GEJALA">
                                             ORANG TANPA GEJALA
                                         </label>
                                     </div>
                                     <div class="radio">
                                         <label>
-                                            <input type="radio" name="form2_17" value="KONTAK ERAT">
+                                            <input type="radio" name="form2_18" value="KONTAK ERAT">
                                             KONTAK ERAT
                                         </label>
                                     </div>
                                     <div class="radio">
                                         <label>
-                                            <input type="radio" name="form2_17" value="PELAKU PERJALANAN">
+                                            <input type="radio" name="form2_18" value="PELAKU PERJALANAN">
                                             PELAKU PERJALANAN
                                         </label>
                                     </div>

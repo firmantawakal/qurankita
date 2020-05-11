@@ -2,9 +2,9 @@
 
 class m_pasien extends CI_Model {
 
-	function get_by($where,$id,$table)
+	function get_table($table)
     {
-        $this->db->where($where, $id);
+        // $this->db->where($where, $id);
         return $this->db->get($table)->result();
 	}
 	
@@ -25,10 +25,10 @@ class m_pasien extends CI_Model {
                 and a.f1_v5 = c.id
                 and a.f1_v6 = d.id
                 and a.f1_v7 = e.id
-                and a.f2_v9 = f.id
-                and a.f2_v10 = g.id
-                and a.f2_v11 = h.id
-                and a.f2_v12 = i.id
+                and a.f2_v10 = f.id
+                and a.f2_v11 = g.id
+                and a.f2_v12 = h.id
+                and a.f2_v13 = i.id
                 order by f1_v10 DESC";
 		return $this->db->query($sql)->result();
 	}

@@ -18,15 +18,9 @@ class Pasien extends CI_Controller {
 	
 	public function index(){
 		$data['pasien'] = $this->m_pasien->get_all();
-		$label_f1 = $this->m_pasien->get_by('label_form','form1','label');
-		foreach ($data['pasien'] as $ps) {
-			$j=1;
-			for ($i=0; $i < count($label_f1); $i++) { 
-				$label_f1[$i]->value = $ps->f1_v.$j;
-			}
-		}
-		// $data['form1'] = array_merge($label_f1,$val_f1);
-		echo json_encode($label_f1);die;
+		$data['label'] = $this->m_pasien->get_table('label');
+		
+		// echo json_encode($label_f1);die;
 		$this->template->load('template','pasien/v_pasien_list',$data);
 	}
 
@@ -90,7 +84,8 @@ class Pasien extends CI_Controller {
 			'f4_v3' => $this->input->post('form4_3',TRUE),
 			'f4_v4' => $this->input->post('form4_4',TRUE),
 			'f4_v5' => $this->input->post('form4_5',TRUE),
-			'f4_v6' => $this->input->post('form3_6',TRUE),
+			'f4_v6' => $this->input->post('form4_6',TRUE),
+			'f4_v7' => $this->input->post('form4_7',TRUE),
 
 			'f5_v1a' => $this->input->post('form5_1a',TRUE),
 			'f5_v1b' => $this->input->post('form5_1b',TRUE),
