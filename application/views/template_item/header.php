@@ -20,14 +20,14 @@
           <li class="dropdown user user-menu">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
               <img src="<?php echo base_url(); ?>assets/AdminLTE/dist/img/avatar5.png" class="user-image" alt="User Image">
-              <span class="hidden-xs">Administrator</span>
+              <span class="hidden-xs"><?php echo $this->session->userdata('nama') ?></span>
             </a>
             <ul class="dropdown-menu">
               <!-- User image -->
               <li class="user-header">
                 <img src="<?php echo base_url(); ?>assets/AdminLTE/dist/img/avatar5.png" class="img-circle" alt="User Image">
                 <p>
-                  Administrator
+                  <?php echo $this->session->userdata('nama-user') ?>
                 </p>
               </li>
               <!-- Menu Footer-->
@@ -36,7 +36,7 @@
                   <a href="#" class="btn btn-default btn-flat">Profile</a>
                 </div> -->
                 <div class="pull-right">
-                  <a href="#" class="btn btn-default btn-flat">Sign out</a>
+                  <a href="<?php echo site_url('login/logout'); ?>" class="btn btn-default btn-flat">Logout</a>
                 </div>
               </li>
             </ul>

@@ -3240,13 +3240,13 @@ table.text-center th {
   margin-bottom: 25px;
   font-weight: 300;
 }
-.login-logo a,
-.register-logo a {
-  color: #444;
+.login-logo b,
+.register-logo b {
+  color: rgb(247, 243, 243);
 }
 .login-page,
 .register-page {
-  background: #d2d6de;
+  background-image: url('../img/covid_bg.png');
 }
 .login-box,
 .register-box {

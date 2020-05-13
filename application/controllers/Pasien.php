@@ -5,13 +5,13 @@ class Pasien extends CI_Controller {
 
 	public function __construct(){
 		parent::__construct();
-		// if ($this->session->userdata('status')<>'login') {
-		// 	$this->session->set_flashdata('message', '
-		// 	<div class="alert alert-danger" id="success-alert">
-		// 		<p>Silahkan Login terlebih dahulu</p>
-		// 	</div>');
-		// 		 redirect(site_url('login'));
-		// 	 }
+		if ($this->session->userdata('status')<>'login') {
+			$this->session->set_flashdata('message', '
+			<div class="alert alert-danger" id="success-alert">
+				<p>Silahkan Login terlebih dahulu</p>
+			</div>');
+				 redirect(site_url('login'));
+			 }
 		$this->load->model('m_city');
 		$this->load->model('m_pasien');
 	}

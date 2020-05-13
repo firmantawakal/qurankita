@@ -46,8 +46,8 @@
                   <td><?php echo $data->f1_v10 ?></td>
                   <td><?php echo $data->f1_v3 ?></td>
                   <td><?php echo $data->f2_v1 ?></td>
-                  <td><?php echo $data->f2_v16.', '.$data->kel_p.', '.$data->kec_p.', '.$data->kab_p.', '.$data->prov_p ?></td>
-                  <td><?php echo $data->f2_v17 ?></td>
+                  <td><?php echo $data->f2_v17.', '.$data->kel_p.', '.$data->kec_p.', '.$data->kab_p.', '.$data->prov_p ?></td>
+                  <td><?php echo $data->f2_v18 ?></td>
                   <td><?php echo $data->created_at ?></td>
               </tr>
               <?php 
@@ -130,7 +130,7 @@
                 </table>
               </div>
             </div>
-
+            
             <div class="box-header with-border">
               <h4 class="box-title">
                 <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
@@ -199,12 +199,26 @@
               </div>
             </div>
 
+            <div class="box-header with-border">
+              <h4 class="box-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapseSix">
+                  Riwayat Penyakit Dahulu
+                </a>
+              </h4>
+            </div>
+            <div id="collapseSix" class="panel-collapse collapse">
+              <div class="box-body">
+                <table class="table table-hover table-vcenter table-striped">
+                  <tr><td><?php echo $label[54]->label_name ?></td><td>:</td><td><?php echo $data->f6; ?></td></tr>
+                </table>
+              </div>
+            </div>
+
           </div>
         </div>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+        <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Tutup</button>
       </div>
     </div>
     <!-- /.modal-content -->
