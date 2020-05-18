@@ -20,7 +20,7 @@ class Pasien extends CI_Controller {
 		$data['pasien'] = $this->m_pasien->get_all();
 		$data['label'] = $this->m_pasien->get_table('label');
 		
-		// echo json_encode($label_f1);die;
+		// echo json_encode($data['label']);die;
 		$this->template->load('template','pasien/v_pasien_list',$data);
 	}
 
@@ -40,6 +40,54 @@ class Pasien extends CI_Controller {
 		$f6val = null;
 		if($f6!=''){
 			$f6val = implode(', ', $f6);
+		};
+
+		$f1016 = $this->input->post('form10_16',TRUE);
+		$f10_v16 = null;
+		if($f1016!=''){
+			$f10_v16 = implode(', ', $f1016);
+		};
+
+		$form11_1 = $this->input->post('form11_1',TRUE);
+		$f11_v1 = null;
+		if($form11_1!=''){
+			$f11_v1 = implode(', ', $form11_1);
+		};
+
+		$form11_2 = $this->input->post('form11_2',TRUE);
+		$f11_v2 = null;
+		if($form11_2!=''){
+			$f11_v2 = implode(', ', $form11_2);
+		};
+
+		$form11_3 = $this->input->post('form11_3',TRUE);
+		$f11_v3 = null;
+		if($form11_3!=''){
+			$f11_v3 = implode(', ', $form11_3);
+		};
+
+		$form11_4 = $this->input->post('form11_4',TRUE);
+		$f11_v4 = null;
+		if($form11_4!=''){
+			$f11_v4 = implode(', ', $form11_4);
+		};
+
+		$form11_5 = $this->input->post('form11_5',TRUE);
+		$f11_v5 = null;
+		if($form11_5!=''){
+			$f11_v5 = implode(', ', $form11_5);
+		};
+
+		$form11_6 = $this->input->post('form11_6',TRUE);
+		$f11_v6 = null;
+		if($form11_6!=''){
+			$f11_v6 = implode(', ', $form11_6);
+		};
+
+		$form11_7 = $this->input->post('form11_7',TRUE);
+		$f11_v7 = null;
+		if($form11_7!=''){
+			$f11_v7 = implode(', ', $form11_7);
 		};
 
 	   $data = array(
@@ -113,10 +161,62 @@ class Pasien extends CI_Controller {
 			'f5_v12b' => $this->input->post('form5_12b',TRUE),
 			'f5_v13a' => $this->input->post('form5_13a',TRUE),
 			'f5_v13b' => $this->input->post('form5_13b',TRUE),
-			'f6' => $f6val
+
+			'f6' => $f6val,
+
+			'f7_v1' => $this->input->post('form7_1',TRUE),
+			'f7_v2' => $this->input->post('form7_2',TRUE),
+			'f7_v3' => $this->input->post('form7_3',TRUE),
+			'f7_v4' => $this->input->post('form7_4',TRUE),
+			'f7_v5' => $this->input->post('form7_5',TRUE),
+			'f7_v6' => $this->input->post('form7_6',TRUE),
+			'f7_v7' => $this->input->post('form7_7',TRUE),
+			'f7_v8' => $this->input->post('form7_8',TRUE),
+
+			'f8_v1' => $this->input->post('form8_1',TRUE),
+			'f8_v1a' => $this->input->post('form8_1a',TRUE),
+			'f8_v1b' => $this->input->post('form8_1b',TRUE),
+			'f8_v2' => $this->input->post('form8_2',TRUE),
+			'f8_v2a' => $this->input->post('form8_2a',TRUE),
+			'f8_v2b' => $this->input->post('form8_2b',TRUE),
+			'f8_v3' => $this->input->post('form8_3',TRUE),
+			'f8_v3a' => $this->input->post('form8_3a',TRUE),
+			'f8_v3b' => $this->input->post('form8_3b',TRUE),
+			'f8_v4' => $this->input->post('form8_4',TRUE),
+			'f8_v4a' => $this->input->post('form8_4a',TRUE),
+			'f8_v4b' => $this->input->post('form8_4b',TRUE),
+
+			'f9_v1' => $this->input->post('form9_1',TRUE),
+			'f9_v2' => $this->input->post('form9_2',TRUE),
+			'f9_v3' => $this->input->post('form9_3',TRUE),
+			'f9_v4' => $this->input->post('form9_4',TRUE),
+
+			'f10_v1' => $this->input->post('form10_1',TRUE),
+			'f10_v2' => $this->input->post('form10_2',TRUE),
+			'f10_v3' => $this->input->post('form10_3',TRUE),
+			'f10_v4' => $this->input->post('form10_4',TRUE),
+			'f10_v5' => $this->input->post('form10_5',TRUE),
+			'f10_v6' => $this->input->post('form10_6',TRUE),
+			'f10_v7' => $this->input->post('form10_7',TRUE),
+			'f10_v8' => $this->input->post('form10_8',TRUE),
+			'f10_v9' => $this->input->post('form10_9',TRUE),
+			'f10_v10' => $this->input->post('form10_10',TRUE),
+			'f10_v11' => $this->input->post('form10_11',TRUE),
+			'f10_v12' => $this->input->post('form10_12',TRUE),
+			'f10_v13' => $this->input->post('form10_13',TRUE),
+			'f10_v14' => $this->input->post('form10_14',TRUE),
+			'f10_v15' => $this->input->post('form10_15',TRUE),
+			'f10_v16' => $f10_v16,
+			'f11_v1' => $f11_v1,
+			'f11_v2' => $f11_v2,
+			'f11_v3' => $f11_v3,
+			'f11_v4' => $f11_v4,
+			'f11_v5' => $f11_v5,
+			'f11_v6' => $f11_v6,
+			'f11_v7' => $f11_v7,
 		);
 
-	    // echo json_encode($data);die;
+	    echo json_encode($form11_1);die;
 
 		$this->m_pasien->insert('pasien', $data);
 		// $this->session->set_flashdata('message', '

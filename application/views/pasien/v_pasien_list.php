@@ -214,6 +214,156 @@
               </div>
             </div>
 
+            <div class="box-header with-border">
+              <h4 class="box-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapseSeven">
+                Riwayat Perawatan di RS sebelumnya
+                </a>
+              </h4>
+            </div>
+            <div id="collapseSeven" class="panel-collapse collapse">
+              <div class="box-body">
+                <table class="table table-hover table-vcenter table-striped">
+                  <tr><td><?php echo $label[55]->label_name ?></td><td>:</td><td><?php echo $data->f7_v1; 
+                            if($data->f7_v1=='Ya'){ ?>
+                            <br>
+                            <table>
+                              <tr><td><?php echo $label[56]->label_name ?></td><td>:</td><td style="min-width:80px"><?php echo $data->f7_v2; ?></td></tr>
+                              <tr><td><?php echo $label[57]->label_name ?></td><td>:</td><td><?php echo $data->f7_v3; ?></td></tr>
+                              <tr><td><?php echo $label[58]->label_name ?></td><td>:</td><td><?php echo $data->f7_v4; ?></td></tr>
+                              <tr><td><?php echo $label[59]->label_name ?></td><td>:</td><td><?php echo $data->f7_v5; ?></td></tr>
+                              <tr><td><?php echo $label[60]->label_name ?></td><td>:</td><td><?php echo $data->f7_v6; ?></td></tr>
+                              
+                            </table>
+                            <?php } ?>
+                        </td></tr>
+                  <tr><td><?php echo $label[61]->label_name ?></td><td>:</td><td><?php echo $data->f7_v7; if($data->f7_v7=='DIRUJUK KE RS'){echo ' ('.$data->f7_v8.')';} ?></td></tr>
+                </table>
+              </div>
+            </div>
+
+            <div class="box-header with-border">
+              <h4 class="box-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapseEight">
+                Pemeriksaan penunjang
+                </a>
+              </h4>
+            </div>
+            <div id="collapseEight" class="panel-collapse collapse">
+              <div class="box-body">
+                <table class="table table-hover table-vcenter table-striped">
+                  <tr><td><?php echo $label[62]->label_name ?></td><td>:</td><td><?php echo $data->f8_v1; 
+                        if($data->f8_v1=='Ya'){ ?>
+                        <br>
+                        <table>
+                          <tr><td style="padding-right:5px">Tanggal</td><td style="padding-right:5px">:</td><td><?php echo $data->f8_v1a; ?></td></tr>
+                          <tr><td>Hasil</td><td>:</td><td><?php echo $data->f8_v1b; ?></td></tr>
+                        </table>
+                        <?php } ?>
+                    </td>
+                  </tr>
+                  <tr><td><?php echo $label[63]->label_name ?></td><td>:</td><td><?php echo $data->f8_v2; 
+                        if($data->f8_v2=='Ya'){ ?>
+                        <br>
+                        <table>
+                          <tr><td style="padding-right:5px">Tanggal</td><td style="padding-right:5px">:</td><td><?php echo $data->f8_v2a; ?></td></tr>
+                          <tr><td>Hasil</td><td>:</td><td><?php echo $data->f8_v2b; ?></td></tr>
+                        </table>
+                        <?php } ?>
+                    </td>
+                  </tr>
+                  <tr><td><?php echo $label[64]->label_name ?></td><td>:</td><td><?php echo $data->f8_v3; 
+                        if($data->f8_v3=='Ya'){ ?>
+                        <br>
+                        <table>
+                          <tr><td style="padding-right:5px">Tanggal</td><td style="padding-right:5px">:</td><td><?php echo $data->f8_v3a; ?></td></tr>
+                          <tr><td>Hasil</td><td>:</td><td><?php echo $data->f8_v3b; ?></td></tr>
+                        </table>
+                        <?php } ?>
+                    </td>
+                  </tr>
+                  <tr><td><?php echo $label[65]->label_name ?></td><td>:</td><td><?php echo $data->f8_v4; 
+                        if($data->f8_v4=='Ya'){ ?>
+                        <br>
+                        <table>
+                          <tr><td style="padding-right:5px">Tanggal</td><td style="padding-right:5px">:</td><td><?php echo $data->f8_v4a; ?></td></tr>
+                          <tr><td>Hasil</td><td>:</td><td><?php echo $data->f8_v4b; ?></td></tr>
+                        </table>
+                        <?php } ?>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+
+            <div class="box-header with-border">
+              <h4 class="box-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapseNine">
+                Diagnosis
+                </a>
+              </h4>
+            </div>
+            <div id="collapseNine" class="panel-collapse collapse">
+              <div class="box-body">
+                <table class="table table-hover table-vcenter table-striped">
+                  <tr><td><?php echo $label[66]->label_name ?></td><td>:</td><td><?php echo $data->f9_v1; ?></td></tr>
+                  <tr><td><?php echo $label[67]->label_name ?></td><td>:</td><td><?php echo $data->f9_v2; ?> </td></tr>
+                  <tr><td><?php echo $label[68]->label_name ?></td><td>:</td><td><?php echo $data->f9_v3; ?> </td></tr>
+                  <tr><td><?php echo $label[69]->label_name ?></td><td>:</td><td><?php echo $data->f9_v4; ?> </td></tr>
+                </table>
+              </div>
+            </div>
+
+            <div class="box-header with-border">
+              <h4 class="box-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapseTen">
+                Faktor kontak/paparan
+                </a>
+              </h4>
+            </div>
+            <div id="collapseTen" class="panel-collapse collapse">
+              <div class="box-body">
+                <table class="table table-hover table-vcenter table-striped">
+                  <tr><td style="width: 200px"><?php echo $label[70]->label_name ?></td><td>:</td><td><?php echo $data->f10_v1; 
+                        if($data->f10_v1=='Ya'){ ?>
+                        <br>
+                        <table>
+                          <tr><td style="padding-right:5px"><?php echo $label[71]->label_name ?></td><td style="padding-right:5px">:</td><td><?php echo $data->f10_v2; ?></td></tr>
+                          <tr><td><?php echo $label[72]->label_name ?></td><td>:</td><td><?php echo $data->f10_v3; ?></td></tr>
+                          <tr><td><?php echo $label[73]->label_name ?></td><td>:</td><td><?php echo $data->f10_v4; ?></td></tr>
+                          <tr><td><?php echo $label[74]->label_name ?></td><td>:</td><td><?php echo $data->f10_v5; ?></td></tr>
+                        </table>
+                        <?php } ?>
+                    </td>
+                  </tr>
+                  <tr><td><?php echo $label[75]->label_name ?></td><td>:</td><td><?php echo $data->f10_v6;?></td></tr>
+                  <tr><td><?php echo $label[76]->label_name ?></td><td>:</td><td><?php echo $data->f10_v7; ?></td></tr>
+                  <tr><td><?php echo $label[77]->label_name ?></td><td>:</td><td><?php echo $data->f10_v8; 
+                        if($data->f10_v8=='Ya'){ ?>
+                        <br>
+                        <table>
+                          <tr><td style="padding-right:5px"><?php echo $label[78]->label_name ?></td><td style="padding-right:5px">:</td><td><?php echo $data->f10_v9; ?></td></tr>
+                        </table>
+                        <?php } ?>
+                    </td>
+                  </tr>
+                  <tr><td><?php echo $label[79]->label_name ?></td><td>:</td><td><?php echo $data->f10_v10; 
+                        if($data->f10_v8=='Ya'){ ?>
+                        <br>
+                        <table>
+                          <tr><td style="padding-right:5px"><?php echo $label[80]->label_name ?></td><td style="padding-right:5px">:</td><td><?php echo $data->f10_v11; ?></td></tr>
+                        </table>
+                        <?php } ?>
+                    </td>
+                  </tr>
+                  <tr><td><?php echo $label[81]->label_name ?></td><td>:</td><td><?php echo $data->f10_v12; ?></td></tr>
+                  <tr><td><?php echo $label[82]->label_name ?></td><td>:</td><td><?php echo $data->f10_v13; ?></td></tr>
+                  <tr><td><?php echo $label[83]->label_name ?></td><td>:</td><td><?php echo $data->f10_v14; if($data->f10_v14=='Ya'){echo ' ('.$data->f10_v15.')';} ?></td></tr>
+                  <tr><td><?php echo $label[84]->label_name ?></td><td>:</td><td><?php echo $data->f10_v16; ?></td></tr>
+                </table>
+              </div>
+            </div>
+
           </div>
         </div>
       </div>
