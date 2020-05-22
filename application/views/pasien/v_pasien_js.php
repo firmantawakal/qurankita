@@ -29,7 +29,7 @@
                   + '<div class="col-md-3">'
                   + '	<div class="form-group">'
                   + '		<label>Hubungan Dengan Kasus</label>'
-                  + '		<input type="text" class="form-control" name="form11_4[]" value="" autocomplete="off">'
+                  + '		<input type="text" id="form11_4" class="form-control" name="form11_4[]" value="" autocomplete="off">'
                   + '	</div>'
                   + '	</div>'
                   + '	<div class="col-md-3">'

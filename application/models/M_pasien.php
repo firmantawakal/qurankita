@@ -4,8 +4,13 @@ class m_pasien extends CI_Model {
 
 	function get_table($table)
     {
-        // $this->db->where($where, $id);
         return $this->db->get($table)->result();
+    }
+    
+    function get_by_id($id)
+    {
+        $this->db->where('id_pasien', $id);
+        return $this->db->get('pasien')->row();
 	}
 	
 	function get_all()
@@ -49,7 +54,7 @@ class m_pasien extends CI_Model {
     // delete data
     function delete($id)
     {
-        $this->db->where($this->id, $id);
-        $this->db->delete($this->table);
+        $this->db->where('id_pasien', $id);
+        $this->db->delete('pasien');
     }
 }

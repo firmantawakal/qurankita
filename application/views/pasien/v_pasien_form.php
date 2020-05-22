@@ -6,6 +6,7 @@
 </section>
 
 <section class="content">
+	<form action="<?php echo $action ?>" method="post" enctype="multipart/form-data">
 	<div class="row">
 		<div class="col-xs-12">
 			<div class="box box-primary box-solid">
@@ -13,25 +14,24 @@
 					<b>Petugas medis/Paramedis/Relawan kesehatan</b>
 				</div>
 				<!-- form start -->
-				<form action="<?php echo $action ?>" method="post" enctype="multipart/form-data">
 					<div class="box-body">
 						<div class="row">
 							<div class="col-md-4">
 								<div class="form-group">
 									<label>Tipe Fasyankes</label>
-									<input type="text" class="form-control" name="form11" value="" requiredss>
+									<input type="text" class="form-control" name="form11" value="" required>
 								</div>
 							</div>
 							<div class="col-md-4">
 								<div class="form-group">
 									<label>Kode Fasyankes</label>
-									<input type="text" class="form-control" name="form12" value="" requiredss>
+									<input type="text" class="form-control" name="form12" value="" required>
 								</div>
 							</div>
 							<div class="col-md-4">
 								<div class="form-group">
 									<label>Nama Fasilitas Pelayanan Kesehatan</label>
-									<input type="text" class="form-control" name="form13" value="" requiredss>
+									<input type="text" class="form-control" name="form13" value="" required>
 								</div>
 							</div>
 							<div class="col-md-3">
@@ -80,20 +80,20 @@
 							<div class="col-md-4">
 								<div class="form-group">
 									<label>Nama Pewawancara</label>
-									<input type="text" class="form-control" name="form18" value="" requiredss>
+									<input type="text" class="form-control" name="form18" value="" required>
 								</div>
 							</div>
 							<div class="col-md-4">
 								<div class="form-group">
 									<label>No Hp Pewawancara</label>
-									<input type="number" class="form-control" name="form19" value="" requiredss>
+									<input type="number" class="form-control" name="form19" value="" required>
 								</div>
 							</div>
 							<div class="col-md-4">
 								<div class="form-group">
 									<label>Tanggal Wawancara</label>
 									<input type="text" class="form-control datepicker" name="form110" value=""
-										requiredss>
+										required>
 								</div>
 							</div>
 						</div>
@@ -113,13 +113,13 @@
 						<div class="col-md-5">
 							<div class="form-group">
 								<label>Nama Pasien</label>
-								<input type="text" class="form-control" name="form2_1" value="" requiredss>
+								<input type="text" class="form-control" name="form2_1" value="" required>
 							</div>
 						</div>
 						<div class="col-md-2">
 							<div class="form-group">
 								<label>No HP</label>
-								<input type="number" class="form-control" name="form2_2" value="" requiredss>
+								<input type="number" class="form-control" name="form2_2" value="" required>
 							</div>
 						</div>
 						<div class="col-md-2">
@@ -151,25 +151,25 @@
 						<div class="col-md-2">
 							<div class="form-group">
 								<label>Tempat Lahir</label>
-								<input type="text" class="form-control" name="form2_6" value="" requiredss>
+								<input type="text" class="form-control" name="form2_6" value="" required>
 							</div>
 						</div>
 						<div class="col-md-2">
 							<div class="form-group">
 								<label>Tanggal Lahir</label>
-								<input type="text" class="form-control datepicker" name="form2_7" value="" requiredss>
+								<input type="text" class="form-control datepicker" name="form2_7" value="" required>
 							</div>
 						</div>
 						<div class="col-md-2">
 							<div class="form-group">
 								<label>Usia</label>
-								<input type="number" class="form-control" name="form2_8" value="" requiredss>
+								<input type="number" class="form-control" name="form2_8" value="" required>
 							</div>
 						</div>
 						<div class="col-md-3">
 							<div class="form-group">
 								<label>NIK</label>
-								<input type="text" class="form-control" name="form2_9" value="" requiredss>
+								<input type="text" class="form-control" name="form2_9" value="" required>
 							</div>
 						</div>
 					</div>
@@ -178,7 +178,7 @@
 							<div class="form-group">
 								<label>Provinsi</label>
 								<select class="form-control select2" id="provinsi2" style="width: 100%;" name="form2_10"
-									requiredss>
+									required>
 									<option value='0'>--pilih--</option>
 									<?php
                                         foreach ($provinsi as $prov2) {
@@ -192,7 +192,7 @@
 							<div class="form-group">
 								<label>Kota/Kab.</label>
 								<select class="form-control select2" id="kabupaten-kota2" style="width: 100%;"
-									name="form2_11" requiredss>
+									name="form2_11" required>
 									<option value='0'>--pilih--</option>
 								</select>
 							</div>
@@ -201,7 +201,7 @@
 							<div class="form-group">
 								<label>Kecamatan</label>
 								<select class="form-control select2" id="kecamatan2" style="width: 100%;"
-									name="form2_12" requiredss>
+									name="form2_12" required>
 									<option value='0'>--pilih--</option>
 								</select>
 							</div>
@@ -210,7 +210,7 @@
 							<div class="form-group">
 								<label>Kelurahan</label>
 								<select class="form-control select2" id="kelurahan-desa2" style="width: 100%;"
-									name="form2_13" requiredss>
+									name="form2_13" required>
 									<option value='0'>--pilih--</option>
 								</select>
 							</div>
@@ -238,7 +238,7 @@
 						<div class="col-md-4">
 							<div class="form-group">
 								<label>Jalan</label>
-								<input type="text" class="form-control" name="form2_17" value="" requiredss>
+								<input type="text" class="form-control" name="form2_17" value="" required>
 							</div>
 						</div>
 						<div class="col-md-3">
@@ -295,7 +295,7 @@
 							<div class="form-group">
 								<div class="radio">
 									<label>
-										<input type="radio" name="form3_1" value="Sedenter" requiredss>
+										<input type="radio" name="form3_1" value="Sedenter" required>
 										Sedenter
 									</label>
 								</div>
@@ -303,13 +303,13 @@
 									<label>
 										<input type="radio" name="form3_1"
 											value="Latihan fisik < 150 menit/minggu (3 x 50 menit/minggu atau 5 x 30 menit/minggu)"
-											requiredss>
+											required>
 										Latihan fisik < 150 menit/minggu (3 x 50 menit/minggu atau 5 x 30 menit/minggu)
 											</label> </div> <div class="radio">
 											<label>
 												<input type="radio" name="form3_1"
 													value="Latihan fisik ≥ 150 menit/minggu (3 x 50 menit/minggu atau 5 x 30 menit/minggu)"
-													requiredss>
+													required>
 												Latihan fisik ≥ 150 menit/minggu (3 x 50 menit/minggu atau 5 x 30
 												menit/minggu)
 											</label>
@@ -320,19 +320,19 @@
 							<div class="form-group">
 								<div class="radio">
 									<label>
-										<input type="radio" name="form3_2" value="Ya" requiredss>
+										<input type="radio" name="form3_2" value="Ya" required>
 										Ya
 									</label>
 								</div>
 								<div class="radio">
 									<label>
-										<input type="radio" name="form3_2" value="Tidak" requiredss>
+										<input type="radio" name="form3_2" value="Tidak" required>
 										Tidak
 									</label>
 								</div>
 								<div class="radio">
 									<label>
-										<input type="radio" name="form3_2" value="Tidak Tahu" requiredss>
+										<input type="radio" name="form3_2" value="Tidak Tahu" required>
 										Tidak Tahu
 									</label>
 								</div>
@@ -343,19 +343,19 @@
 							<div class="form-group">
 								<div class="radio">
 									<label>
-										<input type="radio" name="form3_3" value="Ya" requiredss>
+										<input type="radio" name="form3_3" value="Ya" required>
 										Ya
 									</label>
 								</div>
 								<div class="radio">
 									<label>
-										<input type="radio" name="form3_3" value="Tidak" requiredss>
+										<input type="radio" name="form3_3" value="Tidak" required>
 										Tidak
 									</label>
 								</div>
 								<div class="radio">
 									<label>
-										<input type="radio" name="form3_3" value="Tidak Tahu" requiredss>
+										<input type="radio" name="form3_3" value="Tidak Tahu" required>
 										Tidak Tahu
 									</label>
 								</div>
@@ -365,19 +365,19 @@
 							<div class="form-group">
 								<div class="radio">
 									<label>
-										<input type="radio" name="form3_4" value="Ya" requiredss>
+										<input type="radio" name="form3_4" value="Ya" required>
 										Ya
 									</label>
 								</div>
 								<div class="radio">
 									<label>
-										<input type="radio" name="form3_4" value="Tidak" requiredss>
+										<input type="radio" name="form3_4" value="Tidak" required>
 										Tidak
 									</label>
 								</div>
 								<div class="radio">
 									<label>
-										<input type="radio" name="form3_4" value="Tidak Tahu" requiredss>
+										<input type="radio" name="form3_4" value="Tidak Tahu" required>
 										Tidak Tahu
 									</label>
 								</div>
@@ -514,17 +514,17 @@
 							<div class="form-group">
 								<label class="radio-inline">
 									<input type="radio" name="form5_1a" onclick="yesnoCheck();" id="yes1" value="Ya"
-										requiredss>
+										required>
 									Ya
 								</label>
 								<label class="radio-inline">
 									<input type="radio" name="form5_1a" onclick="yesnoCheck();" id="no1" value="Tidak"
-										checked requiredss>
+										checked required>
 									Tidak
 								</label>
 								<label class="radio-inline">
-									<input type="radio" name="form5_1a" onclick="yesnoCheck();" id="no1"
-										value="Tidak Tahu" requiredss>
+									<input type="radio" name="form5_1a" onclick="yesnoCheck();" id="no1b"
+										value="Tidak Tahu" required>
 									Tidak Tahu
 								</label>
 							</div>
@@ -541,17 +541,17 @@
 							<div class="form-group">
 								<label class="radio-inline">
 									<input type="radio" name="form5_2a" onclick="yesnoCheck();" id="yes2" value="Ya"
-										requiredss>
+										required>
 									Ya
 								</label>
 								<label class="radio-inline">
 									<input type="radio" name="form5_2a" onclick="yesnoCheck();" id="no2" value="Tidak"
-										checked requiredss>
+										checked required>
 									Tidak
 								</label>
 								<label class="radio-inline">
-									<input type="radio" name="form5_2a" onclick="yesnoCheck();" id="no2"
-										value="Tidak Tahu" requiredss>
+									<input type="radio" name="form5_2a" onclick="yesnoCheck();" id="no2b"
+										value="Tidak Tahu" required>
 									Tidak Tahu
 								</label>
 							</div>
@@ -568,17 +568,17 @@
 							<div class="form-group">
 								<label class="radio-inline">
 									<input type="radio" name="form5_3a" onclick="yesnoCheck();" id="yes3" value="Ya"
-										requiredss>
+										required>
 									Ya
 								</label>
 								<label class="radio-inline">
 									<input type="radio" name="form5_3a" onclick="yesnoCheck();" id="no3" value="Tidak"
-										checked requiredss>
+										checked required>
 									Tidak
 								</label>
 								<label class="radio-inline">
-									<input type="radio" name="form5_3a" onclick="yesnoCheck();" id="no3"
-										value="Tidak Tahu" requiredss>
+									<input type="radio" name="form5_3a" onclick="yesnoCheck();" id="no3b"
+										value="Tidak Tahu" required>
 									Tidak Tahu
 								</label>
 							</div>
@@ -595,17 +595,17 @@
 							<div class="form-group">
 								<label class="radio-inline">
 									<input type="radio" name="form5_4a" onclick="yesnoCheck();" id="yes4" value="Ya"
-										requiredss>
+										required>
 									Ya
 								</label>
 								<label class="radio-inline">
 									<input type="radio" name="form5_4a" onclick="yesnoCheck();" id="no4" value="Tidak"
-										checked requiredss>
+										checked required>
 									Tidak
 								</label>
 								<label class="radio-inline">
-									<input type="radio" name="form5_4a" onclick="yesnoCheck();" id="no4"
-										value="Tidak Tahu" requiredss>
+									<input type="radio" name="form5_4a" onclick="yesnoCheck();" id="no4b"
+										value="Tidak Tahu" required>
 									Tidak Tahu
 								</label>
 							</div>
@@ -622,17 +622,17 @@
 							<div class="form-group">
 								<label class="radio-inline">
 									<input type="radio" name="form5_5a" onclick="yesnoCheck();" id="yes5" value="Ya"
-										requiredss>
+										required>
 									Ya
 								</label>
 								<label class="radio-inline">
 									<input type="radio" name="form5_5a" onclick="yesnoCheck();" id="no5" value="Tidak"
-										checked requiredss>
+										checked required>
 									Tidak
 								</label>
 								<label class="radio-inline">
-									<input type="radio" name="form5_5a" onclick="yesnoCheck();" id="no5"
-										value="Tidak Tahu" requiredss>
+									<input type="radio" name="form5_5a" onclick="yesnoCheck();" id="no5b"
+										value="Tidak Tahu" required>
 									Tidak Tahu
 								</label>
 							</div>
@@ -649,17 +649,17 @@
 							<div class="form-group">
 								<label class="radio-inline">
 									<input type="radio" name="form5_6a" onclick="yesnoCheck();" id="yes6" value="Ya"
-										requiredss>
+										required>
 									Ya
 								</label>
 								<label class="radio-inline">
 									<input type="radio" name="form5_6a" onclick="yesnoCheck();" id="no6" value="Tidak"
-										checked requiredss>
+										checked required>
 									Tidak
 								</label>
 								<label class="radio-inline">
-									<input type="radio" name="form5_6a" onclick="yesnoCheck();" id="no6"
-										value="Tidak Tahu" requiredss>
+									<input type="radio" name="form5_6a" onclick="yesnoCheck();" id="no6b"
+										value="Tidak Tahu" required>
 									Tidak Tahu
 								</label>
 							</div>
@@ -676,17 +676,17 @@
 							<div class="form-group">
 								<label class="radio-inline">
 									<input type="radio" name="form5_7a" onclick="yesnoCheck();" id="yes7" value="Ya"
-										requiredss>
+										required>
 									Ya
 								</label>
 								<label class="radio-inline">
 									<input type="radio" name="form5_7a" onclick="yesnoCheck();" id="no7" value="Tidak"
-										checked requiredss>
+										checked required>
 									Tidak
 								</label>
 								<label class="radio-inline">
-									<input type="radio" name="form5_7a" onclick="yesnoCheck();" id="no7"
-										value="Tidak Tahu" requiredss>
+									<input type="radio" name="form5_7a" onclick="yesnoCheck();" id="no7b"
+										value="Tidak Tahu" required>
 									Tidak Tahu
 								</label>
 							</div>
@@ -703,17 +703,17 @@
 							<div class="form-group">
 								<label class="radio-inline">
 									<input type="radio" name="form5_8a" onclick="yesnoCheck();" id="yes8" value="Ya"
-										requiredss>
+										required>
 									Ya
 								</label>
 								<label class="radio-inline">
 									<input type="radio" name="form5_8a" onclick="yesnoCheck();" id="no8" value="Tidak"
-										checked requiredss>
+										checked required>
 									Tidak
 								</label>
 								<label class="radio-inline">
-									<input type="radio" name="form5_8a" onclick="yesnoCheck();" id="no8"
-										value="Tidak Tahu" requiredss>
+									<input type="radio" name="form5_8a" onclick="yesnoCheck();" id="no8b"
+										value="Tidak Tahu" required>
 									Tidak Tahu
 								</label>
 							</div>
@@ -730,17 +730,17 @@
 							<div class="form-group">
 								<label class="radio-inline">
 									<input type="radio" name="form5_9a" onclick="yesnoCheck();" id="yes9" value="Ya"
-										requiredss>
+										required>
 									Ya
 								</label>
 								<label class="radio-inline">
 									<input type="radio" name="form5_9a" onclick="yesnoCheck();" id="no9" value="Tidak"
-										checked requiredss>
+										checked required>
 									Tidak
 								</label>
 								<label class="radio-inline">
-									<input type="radio" name="form5_9a" onclick="yesnoCheck();" id="no9"
-										value="Tidak Tahu" requiredss>
+									<input type="radio" name="form5_9a" onclick="yesnoCheck();" id="no9b"
+										value="Tidak Tahu" required>
 									Tidak Tahu
 								</label>
 							</div>
@@ -757,17 +757,17 @@
 							<div class="form-group">
 								<label class="radio-inline">
 									<input type="radio" name="form5_10a" onclick="yesnoCheck();" id="yes10" value="Ya"
-										requiredss>
+										required>
 									Ya
 								</label>
 								<label class="radio-inline">
 									<input type="radio" name="form5_10a" onclick="yesnoCheck();" id="no10" value="Tidak"
-										checked requiredss>
+										checked required>
 									Tidak
 								</label>
 								<label class="radio-inline">
-									<input type="radio" name="form5_10a" onclick="yesnoCheck();" id="no10"
-										value="Tidak Tahu" requiredss>
+									<input type="radio" name="form5_10a" onclick="yesnoCheck();" id="no10b"
+										value="Tidak Tahu" required>
 									Tidak Tahu
 								</label>
 							</div>
@@ -784,17 +784,17 @@
 							<div class="form-group">
 								<label class="radio-inline">
 									<input type="radio" name="form5_11a" onclick="yesnoCheck();" id="yes11" value="Ya"
-										requiredss>
+										required>
 									Ya
 								</label>
 								<label class="radio-inline">
 									<input type="radio" name="form5_11a" onclick="yesnoCheck();" id="no11" value="Tidak"
-										checked requiredss>
+										checked required>
 									Tidak
 								</label>
 								<label class="radio-inline">
-									<input type="radio" name="form5_11a" onclick="yesnoCheck();" id="no11"
-										value="Tidak Tahu" requiredss>
+									<input type="radio" name="form5_11a" onclick="yesnoCheck();" id="no11b"
+										value="Tidak Tahu" required>
 									Tidak Tahu
 								</label>
 							</div>
@@ -811,17 +811,17 @@
 							<div class="form-group">
 								<label class="radio-inline">
 									<input type="radio" name="form5_12a" onclick="yesnoCheck();" id="yes12" value="Ya"
-										requiredss>
+										required>
 									Ya
 								</label>
 								<label class="radio-inline">
 									<input type="radio" name="form5_12a" onclick="yesnoCheck();" id="no12" value="Tidak"
-										checked requiredss>
+										checked required>
 									Tidak
 								</label>
 								<label class="radio-inline">
-									<input type="radio" name="form5_12a" onclick="yesnoCheck();" id="no12"
-										value="Tidak Tahu" requiredss>
+									<input type="radio" name="form5_12a" onclick="yesnoCheck();" id="no12b"
+										value="Tidak Tahu" required>
 									Tidak Tahu
 								</label>
 							</div>
@@ -838,17 +838,17 @@
 							<div class="form-group">
 								<label class="radio-inline">
 									<input type="radio" name="form5_13a" onclick="yesnoCheck();" id="yes13" value="Ya"
-										requiredss>
+										required>
 									Ya
 								</label>
 								<label class="radio-inline">
 									<input type="radio" name="form5_13a" onclick="yesnoCheck();" id="no13" value="Tidak"
-										checked requiredss>
+										checked required>
 									Tidak
 								</label>
 								<label class="radio-inline">
-									<input type="radio" name="form5_13a" onclick="yesnoCheck();" id="no13"
-										value="Tidak Tahu" requiredss>
+									<input type="radio" name="form5_13a" onclick="yesnoCheck();" id="no13b"
+										value="Tidak Tahu" required>
 									Tidak Tahu
 								</label>
 							</div>
@@ -866,6 +866,7 @@
 			</div>
 		</div>
 	</div>
+
 	<div class="row">
 		<div class="col-xs-12">
 			<div class="box box-primary box-solid">
@@ -964,12 +965,12 @@
 							<div class="form-group">
 								<label class="radio-inline">
 									<input type="radio" name="form7_1" onclick="yesnoCheck2();" id="yes14" value="Ya"
-										requiredss>
+										required>
 									Ya
 								</label>
 								<label class="radio-inline">
 									<input type="radio" name="form7_1" onclick="yesnoCheck2();" id="no14" value="Tidak"
-										checked requiredss>
+										checked required>
 									Tidak
 								</label>
 							</div>
@@ -981,19 +982,19 @@
 								<div class="form-group">
 									<label>Tanggal Masuk RS</label>
 									<input type="text" class="form-control datepicker" name="form7_2" value=""
-										requiredss>
+										required>
 								</div>
 							</div>
 							<div class="col-md-2">
 								<div class="form-group">
 									<label>Nama RS</label>
-									<input type="text" class="form-control" name="form7_3" value="" requiredss>
+									<input type="text" class="form-control" name="form7_3" value="" required>
 								</div>
 							</div>
 							<div class="col-md-2">
 								<div class="form-group">
 									<label>Dirawat di ICU</label>
-									<select name="form7_4" class="form-control" style="width: 100%;" requiredss>
+									<select name="form7_4" class="form-control" style="width: 100%;" required>
 										<option value=''></option>
 										<option value='Ya'>Ya</option>
 										<option value='Tidak'>Tidak</option>
@@ -1030,35 +1031,35 @@
 								<div class="radio">
 									<label>
 										<input type="radio" name="form7_7" onclick="yesnoCheck3();" id="yes15"
-											value="DIRUJUK KE RS" requiredss>
+											value="DIRUJUK KE RS" required>
 										DIRUJUK KE RS
 									</label>
 								</div>
 								<div class="radio">
 									<label>
 										<input type="radio" name="form7_7" onclick="yesnoCheck3();" id="no15"
-											value="DALAM PERAWATAN RS" requiredss>
+											value="DALAM PERAWATAN RS" required>
 										DALAM PERAWATAN RS
 									</label>
 								</div>
 								<div class="radio">
 									<label>
-										<input type="radio" name="form7_7" onclick="yesnoCheck3();" id="no15"
-											value="KARANTINA RUMAH" requiredss>
+										<input type="radio" name="form7_7" onclick="yesnoCheck3();" id="no15b"
+											value="KARANTINA RUMAH" required>
 										KARANTINA RUMAH
 									</label>
 								</div>
 								<div class="radio">
 									<label>
-										<input type="radio" name="form7_7" onclick="yesnoCheck3();" id="no15"
-											value="SEMBUH" requiredss>
+										<input type="radio" name="form7_7" onclick="yesnoCheck3();" id="no15c"
+											value="SEMBUH" required>
 										SEMBUH
 									</label>
 								</div>
 								<div class="radio">
 									<label>
-										<input type="radio" name="form7_7" onclick="yesnoCheck3();" id="no15"
-											value="MENINGGAL" requiredss>
+										<input type="radio" name="form7_7" onclick="yesnoCheck3();" id="no15d"
+											value="MENINGGAL" required>
 										MENINGGAL
 									</label>
 								</div>
@@ -1068,7 +1069,7 @@
 							<div id="form7b_hide" style="display:none">
 								<div class="form-group">
 									<label>Nama RS Rujukan</label>
-									<input type="text" class="form-control" name="form7_8" value="" requiredss>
+									<input type="text" class="form-control" name="form7_8" value="" required>
 								</div>
 							</div>
 						</div>
@@ -1092,12 +1093,12 @@
 							<div class="form-group">
 								<label class="radio-inline">
 									<input type="radio" name="form8_1" onclick="yesnoCheck4();" id="yes16" value="Ya"
-										requiredss>
+										required>
 									Ya
 								</label>
 								<label class="radio-inline">
 									<input type="radio" name="form8_1" onclick="yesnoCheck4();" id="no16" value="Tidak"
-										checked requiredss>
+										checked required>
 									Tidak
 								</label>
 							</div>
@@ -1107,7 +1108,7 @@
 								<div class="form-group">
 									<label>Tanggal</label>
 									<input type="text" class="form-control datepicker" name="form8_1a" value=""
-										requiredss style="width: 90%;">
+										 style="width: 90%;">
 								</div>
 								<div class="form-group">
 									<label>Hasil</label>
@@ -1127,12 +1128,12 @@
 							<div class="form-group">
 								<label class="radio-inline">
 									<input type="radio" name="form8_2" onclick="yesnoCheck4();" id="yes17" value="Ya"
-										requiredss>
+										required>
 									Ya
 								</label>
 								<label class="radio-inline">
 									<input type="radio" name="form8_2" onclick="yesnoCheck4();" id="no17" value="Tidak"
-										checked requiredss>
+										checked required>
 									Tidak
 								</label>
 							</div>
@@ -1142,11 +1143,11 @@
 								<div class="form-group">
 									<label>Tanggal</label>
 									<input type="text" class="form-control datepicker" name="form8_2a" value=""
-										requiredss style="width: 90%;">
+										 style="width: 90%;">
 								</div>
 								<div class="form-group">
 									<label>Hasil</label>
-									<select name="form8_2b" class="form-control" style="width: 90%;" requiredss>
+									<select name="form8_2b" class="form-control" style="width: 90%;">
 										<option value=''></option>
 										<option value='Positif'>Positif</option>
 										<option value='Negatif'>Negatif</option>
@@ -1162,12 +1163,12 @@
 							<div class="form-group">
 								<label class="radio-inline">
 									<input type="radio" name="form8_3" onclick="yesnoCheck4();" id="yes18" value="Ya"
-										requiredss>
+										required>
 									Ya
 								</label>
 								<label class="radio-inline">
 									<input type="radio" name="form8_3" onclick="yesnoCheck4();" id="no18" value="Tidak"
-										checked requiredss>
+										checked required>
 									Tidak
 								</label>
 							</div>
@@ -1177,11 +1178,11 @@
 								<div class="form-group">
 									<label>Tanggal</label>
 									<input type="text" class="form-control datepicker" name="form8_3a" value=""
-										requiredss style="width: 90%;">
+										 style="width: 90%;">
 								</div>
 								<div class="form-group">
 									<label>Hasil</label>
-									<select name="form8_3b" class="form-control" style="width: 90%;" requiredss>
+									<select name="form8_3b" class="form-control" style="width: 90%;">
 										<option value=''></option>
 										<option value='Positif'>Positif</option>
 										<option value='Negatif'>Negatif</option>
@@ -1197,12 +1198,12 @@
 							<div class="form-group">
 								<label class="radio-inline">
 									<input type="radio" name="form8_4" onclick="yesnoCheck4();" id="yes19" value="Ya"
-										requiredss>
+										required>
 									Ya
 								</label>
 								<label class="radio-inline">
 									<input type="radio" name="form8_4" onclick="yesnoCheck4();" id="no19" value="Tidak"
-										checked requiredss>
+										checked required>
 									Tidak
 								</label>
 							</div>
@@ -1211,12 +1212,11 @@
 							<div id="hide19" style="display:none">
 								<div class="form-group">
 									<label>Tanggal</label>
-									<input type="text" class="form-control datepicker" name="form8_4a" value=""
-										requiredss>
+									<input type="text" class="form-control datepicker" name="form8_4a" value="">
 								</div>
 								<div class="form-group">
 									<label>Hasil</label>
-									<select name="form8_4b" class="form-control" style="width: 90%;" requiredss>
+									<select name="form8_4b" class="form-control" style="width: 90%;">
 										<option value=''></option>
 										<option value='Positif'>Positif</option>
 										<option value='Negatif'>Negatif</option>
@@ -1243,19 +1243,19 @@
 							<div class="form-group">
 								<div class="radio">
 									<label>
-										<input type="radio" name="form9_1" value="Ya" requiredss>
+										<input type="radio" name="form9_1" value="Ya" required>
 										Ya
 									</label>
 								</div>
 								<div class="radio">
 									<label>
-										<input type="radio" name="form9_1" value="Tidak" checked requiredss>
+										<input type="radio" name="form9_1" value="Tidak" checked required>
 										Tidak
 									</label>
 								</div>
 								<div class="radio">
 									<label>
-										<input type="radio" name="form9_1" value="Tidak Tahu" requiredss>
+										<input type="radio" name="form9_1" value="Tidak Tahu" required>
 										Tidak Tahu
 									</label>
 								</div>
@@ -1266,19 +1266,19 @@
 							<div class="form-group">
 								<div class="radio">
 									<label>
-										<input type="radio" name="form9_2" value="Ya" requiredss>
+										<input type="radio" name="form9_2" value="Ya" required>
 										Ya
 									</label>
 								</div>
 								<div class="radio">
 									<label>
-										<input type="radio" name="form9_2" value="Tidak" checked requiredss>
+										<input type="radio" name="form9_2" value="Tidak" checked required>
 										Tidak
 									</label>
 								</div>
 								<div class="radio">
 									<label>
-										<input type="radio" name="form9_2" value="Tidak Tahu" requiredss>
+										<input type="radio" name="form9_2" value="Tidak Tahu" required>
 										Tidak Tahu
 									</label>
 								</div>
@@ -1289,19 +1289,19 @@
 							<div class="form-group">
 								<div class="radio">
 									<label>
-										<input type="radio" name="form9_3" value="Ya" requiredss>
+										<input type="radio" name="form9_3" value="Ya" required>
 										Ya
 									</label>
 								</div>
 								<div class="radio">
 									<label>
-										<input type="radio" name="form9_3" value="Tidak" checked requiredss>
+										<input type="radio" name="form9_3" value="Tidak" checked required>
 										Tidak
 									</label>
 								</div>
 								<div class="radio">
 									<label>
-										<input type="radio" name="form9_3" value="Tidak Tahu" requiredss>
+										<input type="radio" name="form9_3" value="Tidak Tahu" required>
 										Tidak Tahu
 									</label>
 								</div>
@@ -1310,7 +1310,7 @@
                         <div class="col-md-6">
 							<div class="form-group">
                                 <label>Diagnosis Lain</label>
-                                <input type="text" class="form-control" name="form9_4" value="" requiredss>
+                                <input type="text" class="form-control" name="form9_4" value="" required>
 							</div>
 						</div>
 					</div>
@@ -1332,13 +1332,13 @@
 							<div class="form-group">
 								<div class="radio">
 									<label>
-										<input type="radio" name="form10_1" value="Ya" onclick="yesnoCheck5();" id="yes20" requiredss>
+										<input type="radio" name="form10_1" value="Ya" onclick="yesnoCheck5();" id="yes20" required>
 										Ya
 									</label>
 								</div>
 								<div class="radio">
 									<label>
-										<input type="radio" name="form10_1" value="Tidak"  onclick="yesnoCheck5();" id="no20" checked requiredss>
+										<input type="radio" name="form10_1" value="Tidak"  onclick="yesnoCheck5();" id="no20" checked required>
 										Tidak
 									</label>
 								</div>
@@ -1346,19 +1346,19 @@
 							<div id="hide20" style="display:none">
 								<div class="form-group">
 									<label>Negara</label>
-									<input type="text" class="form-control" name="form10_2" value="" requiredss>
+									<input type="text" class="form-control" name="form10_2" value="">
 								</div>
 								<div class="form-group">
 									<label>Kota</label>
-									<input type="text" class="form-control" name="form10_3" value="" requiredss>
+									<input type="text" class="form-control" name="form10_3" value="">
 								</div>
 								<div class="form-group">
 									<label>Tanggal Mulai Perjalanan</label>
-									<input type="text" class="form-control datepicker" name="form10_4" value="" requiredss>
+									<input type="text" class="form-control datepicker" name="form10_4" value="">
 								</div>
 								<div class="form-group">
 									<label>Tanggal Tiba Di Indonesia</label>
-									<input type="text" class="form-control datepicker" name="form10_5" value="" requiredss>
+									<input type="text" class="form-control datepicker" name="form10_5" value="">
 								</div>
 							</div>
 
@@ -1368,19 +1368,19 @@
 							<div class="form-group">
 								<div class="radio">
 									<label>
-										<input type="radio" name="form10_6" value="Ya" requiredss>
+										<input type="radio" name="form10_6" value="Ya" required>
 										Ya
 									</label>
 								</div>
 								<div class="radio">
 									<label>
-										<input type="radio" name="form10_6" value="Tidak" checked requiredss>
+										<input type="radio" name="form10_6" value="Tidak" checked required>
 										Tidak
 									</label>
 								</div>
 								<div class="radio">
 									<label>
-										<input type="radio" name="form10_6" value="Tidak Tahu" requiredss>
+										<input type="radio" name="form10_6" value="Tidak Tahu" required>
 										Tidak Tahu
 									</label>
 								</div>
@@ -1391,19 +1391,19 @@
 							<div class="form-group">
 								<div class="radio">
 									<label>
-										<input type="radio" name="form10_7" value="Ya" requiredss>
+										<input type="radio" name="form10_7" value="Ya" required>
 										Ya
 									</label>
 								</div>
 								<div class="radio">
 									<label>
-										<input type="radio" name="form10_7" value="Tidak" checked requiredss>
+										<input type="radio" name="form10_7" value="Tidak" checked required>
 										Tidak
 									</label>
 								</div>
 								<div class="radio">
 									<label>
-										<input type="radio" name="form10_7" value="Tidak Tahu" requiredss>
+										<input type="radio" name="form10_7" value="Tidak Tahu" required>
 										Tidak Tahu
 									</label>
 								</div>
@@ -1414,19 +1414,19 @@
 							<div class="form-group">
 								<div class="radio">
 									<label>
-										<input type="radio" name="form10_8" value="Ya" onclick="yesnoCheck5();" id="yes21" requiredss>
+										<input type="radio" name="form10_8" value="Ya" onclick="yesnoCheck5();" id="yes21" required>
 										Ya
 									</label>
 								</div>
 								<div class="radio">
 									<label>
-										<input type="radio" name="form10_8" value="Tidak"  onclick="yesnoCheck5();" id="no21" checked requiredss>
+										<input type="radio" name="form10_8" value="Tidak"  onclick="yesnoCheck5();" id="no21" checked required>
 										Tidak
 									</label>
 								</div>
 								<div class="radio">
 									<label>
-										<input type="radio" name="form10_8" value="Tidak Tahu"  onclick="yesnoCheck5();" id="no21" requiredss>
+										<input type="radio" name="form10_8" value="Tidak Tahu"  onclick="yesnoCheck5();" id="no21b" required>
 										Tidak Tahu
 									</label>
 								</div>
@@ -1434,7 +1434,7 @@
 							<div id="hide21" style="display:none">
 								<div class="form-group">
 									<label>Lokasi / Nama Tempat</label>
-									<input type="text" class="form-control" name="form10_9" value="" requiredss>
+									<input type="text" class="form-control" name="form10_9" value="">
 								</div>
 							</div>
 						</div>
@@ -1443,19 +1443,19 @@
 							<div class="form-group">
 								<div class="radio">
 									<label>
-										<input type="radio" name="form10_10" value="Ya" onclick="yesnoCheck5();" id="yes22" requiredss>
+										<input type="radio" name="form10_10" value="Ya" onclick="yesnoCheck5();" id="yes22" required>
 										Ya
 									</label>
 								</div>
 								<div class="radio">
 									<label>
-										<input type="radio" name="form10_10" value="Tidak"  onclick="yesnoCheck5();" id="no22" checked requiredss>
+										<input type="radio" name="form10_10" value="Tidak"  onclick="yesnoCheck5();" id="no22" checked required>
 										Tidak
 									</label>
 								</div>
 								<div class="radio">
 									<label>
-										<input type="radio" name="form10_10" value="Tidak Tahu"  onclick="yesnoCheck5();" id="no22" requiredss>
+										<input type="radio" name="form10_10" value="Tidak Tahu"  onclick="yesnoCheck5();" id="no22b" required>
 										Tidak Tahu
 									</label>
 								</div>
@@ -1463,7 +1463,7 @@
 							<div id="hide22" style="display:none">
 								<div class="form-group">
 									<label>Lokasi / Nama Tempat</label>
-									<input type="text" class="form-control" name="form10_11" value="" requiredss>
+									<input type="text" class="form-control" name="form10_11" value="">
 								</div>
 							</div>
 						</div>
@@ -1472,19 +1472,19 @@
 							<div class="form-group">
 								<div class="radio">
 									<label>
-										<input type="radio" name="form10_12" value="Ya" requiredss>
+										<input type="radio" name="form10_12" value="Ya" required>
 										Ya
 									</label>
 								</div>
 								<div class="radio">
 									<label>
-										<input type="radio" name="form10_12" value="Tidak" checked requiredss>
+										<input type="radio" name="form10_12" value="Tidak" checked required>
 										Tidak
 									</label>
 								</div>
 								<div class="radio">
 									<label>
-										<input type="radio" name="form10_12" value="Tidak Tahu" requiredss>
+										<input type="radio" name="form10_12" value="Tidak Tahu" required>
 										Tidak Tahu
 									</label>
 								</div>
@@ -1495,19 +1495,19 @@
 							<div class="form-group">
 								<div class="radio">
 									<label>
-										<input type="radio" name="form10_13" value="Ya" requiredss>
+										<input type="radio" name="form10_13" value="Ya" required>
 										Ya
 									</label>
 								</div>
 								<div class="radio">
 									<label>
-										<input type="radio" name="form10_13" value="Tidak" checked requiredss>
+										<input type="radio" name="form10_13" value="Tidak" checked required>
 										Tidak
 									</label>
 								</div>
 								<div class="radio">
 									<label>
-										<input type="radio" name="form10_13" value="Tidak Tahu" requiredss>
+										<input type="radio" name="form10_13" value="Tidak Tahu" required>
 										Tidak Tahu
 									</label>
 								</div>
@@ -1521,19 +1521,19 @@
 								<div class="form-group">
 									<div class="radio">
 										<label>
-											<input type="radio" name="form10_14" value="Ya" onclick="yesnoCheck5();" id="yes23" requiredss>
+											<input type="radio" name="form10_14" value="Ya" onclick="yesnoCheck5();" id="yes23" required>
 											Ya
 										</label>
 									</div>
 									<div class="radio">
 										<label>
-											<input type="radio" name="form10_14" value="Tidak"  onclick="yesnoCheck5();" id="no23" checked requiredss>
+											<input type="radio" name="form10_14" value="Tidak"  onclick="yesnoCheck5();" id="no23" checked required>
 											Tidak
 										</label>
 									</div>
 									<div class="radio">
 										<label>
-											<input type="radio" name="form10_14" value="Tidak Tahu"  onclick="yesnoCheck5();" id="no23" requiredss>
+											<input type="radio" name="form10_14" value="Tidak Tahu"  onclick="yesnoCheck5();" id="no23b" required>
 											Tidak Tahu
 										</label>
 									</div>
@@ -1541,7 +1541,7 @@
 								<div id="hide23" style="display:none">
 									<div class="form-group">
 										<label>Petugas Kesehatan</label>
-										<select name="form10_15" class="form-control" requiredss>
+										<select name="form10_15" class="form-control">
 											<option value="">-- Pilih Tenaga Kesehatan --</option>
 											<option value="Dokter">Dokter</option>
 											<option value="Perawat">Perawat</option>
@@ -1629,13 +1629,11 @@
 					<table class="table table-bordered table-hover" id="empData">
 					</table>
 					<br>
-					<button type="button" class="btn btn-warning btn-md" onClick="addNewRow()"><span class="fa fa-plus"></span> Tambah Kontak Kasus Lain</button>
-					
+					<button type="button" class="btn btn-warning btn-md" onclick="addNewRow()"><span class="fa fa-plus"></span> Tambah Kontak Kasus Lain</button>
 				</div>
 			</div>
 		</div>
 	</div>
-
 	<div class="box-footer">
 		<button type="submit" class="btn btn-primary">Tambah</button>
 	</div>
@@ -1643,8 +1641,4 @@
 </section>
 
 
-<!-- <div class="box-footer">
-                    <button type="submit" class="btn btn-primary">Submit</button>
-                </div>
-                </form> -->
 <?php $this->load->view('pasien/v_pasien_js') ?>

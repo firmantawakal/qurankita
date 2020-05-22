@@ -33,23 +33,41 @@
             <tbody>
             <?php
 				      $no=1;
-                foreach($pasien as $data){
+                foreach($pasien as $dt){
             ?>
               <tr>
                   <td><?php echo $no++ ?></td>
                   <td class="text-center">
-                      <span data-toggle="tooltip" title="Detail"><a href="#detail<?php echo $data->id_pasien; ?>" data-toggle="modal" class="btn btn-xs btn-success"><i class="fa fa-bank"></i></a></span>
+                      <span data-toggle="tooltip" title="Detail"><a href="#detail<?php echo $dt->id_pasien; ?>" data-toggle="modal" class="btn btn-xs btn-success"><i class="fa fa-bank"></i></a></span>
+                      <span data-toggle="tooltip" title="Delete"><a href="#modal-fade<?php echo $dt->id_pasien; ?>" data-toggle="modal" class="btn btn-xs btn-danger"><i class="fa fa-times"></i></a></span>
 
-                      <!-- <a href="<?php //echo site_url('insentif/update/'.$data->id_insentif) ?>" data-toggle="tooltip" title="Edit" class="btn btn-xs btn-default"><i class="fa fa-pencil"></i></a>
-                      <span data-toggle="tooltip" title="Delete"><a href="#modal-fade<?php //ho $data->id_insentif; ?>" data-toggle="modal" class="btn btn-xs btn-danger"><i class="fa fa-times"></i></a></span> -->
+                      <!-- <a href="<?php //echo site_url('insentif/update/'.$dt->id_insentif) ?>" data-toggle="tooltip" title="Edit" class="btn btn-xs btn-default"><i class="fa fa-pencil"></i></a>
+                      <span data-toggle="tooltip" title="Delete"><a href="#modal-fade<?php //ho $dt->id_insentif; ?>" data-toggle="modal" class="btn btn-xs btn-danger"><i class="fa fa-times"></i></a></span> -->
                   </td>
-                  <td><?php echo $data->f1_v10 ?></td>
-                  <td><?php echo $data->f1_v3 ?></td>
-                  <td><?php echo $data->f2_v1 ?></td>
-                  <td><?php echo $data->f2_v17.', '.$data->kel_p.', '.$data->kec_p.', '.$data->kab_p.', '.$data->prov_p ?></td>
-                  <td><?php echo $data->f2_v18 ?></td>
-                  <td><?php echo $data->created_at ?></td>
+                  <td><?php echo $dt->f1_v10 ?></td>
+                  <td><?php echo $dt->f1_v3 ?></td>
+                  <td><?php echo $dt->f2_v1 ?></td>
+                  <td><?php echo $dt->f2_v17.', '.$dt->kel_p.', '.$dt->kec_p.', '.$dt->kab_p.', '.$dt->prov_p ?></td>
+                  <td><?php echo $dt->f2_v18 ?></td>
+                  <td><?php echo $dt->created_at ?></td>
               </tr>
+              <div id="modal-fade<?php echo $dt->id_pasien; ?>" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+                  <div class="modal-dialog">
+                      <div class="modal-content">
+                          <div class="modal-header">
+                              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                              <h3 class="modal-title"><strong>Konfirmasi</strong></h3>
+                          </div>
+                          <div class="modal-body">
+                              Anda yakin ingin menghapus data?
+                          </div>
+                          <div class="modal-footer">
+                              <a href="<?php echo site_url('pasien/delete/'.$dt->id_pasien) ?>" class="btn btn-effect-ripple btn-danger">Ya</a>
+                              <button type="button" class="btn btn-effect-ripple btn-default" data-dismiss="modal">Tidak</button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
               <?php 
                 }
               ?>
@@ -60,6 +78,7 @@
     </div>
   </div>
 </section>
+
 <?php
     foreach($pasien as $data){
 ?>
@@ -77,12 +96,12 @@
 
             <div class="box-header with-border">
               <h4 class="box-title">
-                <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne<?php echo $data->id_pasien; ?>">
                     Petugas medis/Paramedis/Relawan kesehatan
                 </a>
               </h4>
             </div>
-            <div id="collapseOne" class="panel-collapse collapse">
+            <div id="collapseOne<?php echo $data->id_pasien; ?>" class="panel-collapse collapse">
               <div class="box-body">
                 <table class="table table-hover table-vcenter table-striped">
                   <tr><td><?php echo $label[0]->label_name ?></td><td>:</td><td><?php echo $data->f1_v1 ?></td></tr>
@@ -101,12 +120,12 @@
 
             <div class="box-header with-border">
               <h4 class="box-title">
-                <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo<?php echo $data->id_pasien; ?>">
                     Identitas Pasien
                 </a>
               </h4>
             </div>
-            <div id="collapseTwo" class="panel-collapse collapse">
+            <div id="collapseTwo<?php echo $data->id_pasien; ?>" class="panel-collapse collapse">
               <div class="box-body">
                 <table class="table table-hover table-vcenter table-striped">
                   <tr><td><?php echo $label[10]->label_name ?></td><td>:</td><td><?php echo $data->f2_v1 ?></td></tr>
@@ -133,12 +152,12 @@
             
             <div class="box-header with-border">
               <h4 class="box-title">
-                <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree<?php echo $data->id_pasien; ?>">
                     Riwayat Sosial – Ekonomi
                 </a>
               </h4>
             </div>
-            <div id="collapseThree" class="panel-collapse collapse">
+            <div id="collapseThree<?php echo $data->id_pasien; ?>" class="panel-collapse collapse">
               <div class="box-body">
                 <table class="table table-hover table-vcenter table-striped">
                   <tr><td><?php echo $label[28]->label_name ?></td><td>:</td><td><?php echo $data->f3_v1 ?></td></tr>
@@ -153,12 +172,12 @@
 
             <div class="box-header with-border">
               <h4 class="box-title">
-                <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour<?php echo $data->id_pasien; ?>">
                     Pemeriksaan Fisik
                 </a>
               </h4>
             </div>
-            <div id="collapseFour" class="panel-collapse collapse">
+            <div id="collapseFour<?php echo $data->id_pasien; ?>" class="panel-collapse collapse">
               <div class="box-body">
                 <table class="table table-hover table-vcenter table-striped">
                   <tr><td><?php echo $label[34]->label_name ?></td><td>:</td><td><?php echo $data->f4_v1 ?> &#176;C</td></tr>
@@ -174,12 +193,12 @@
 
             <div class="box-header with-border">
               <h4 class="box-title">
-                <a data-toggle="collapse" data-parent="#accordion" href="#collapseFive">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapseFive<?php echo $data->id_pasien; ?>">
                     Informasi Klinis
                 </a>
               </h4>
             </div>
-            <div id="collapseFive" class="panel-collapse collapse">
+            <div id="collapseFive<?php echo $data->id_pasien; ?>" class="panel-collapse collapse">
               <div class="box-body">
                 <table class="table table-hover table-vcenter table-striped">
                   <tr><td><?php echo $label[41]->label_name ?></td><td>:</td><td><?php echo $data->f5_v1a; if($data->f5_v1a=='Ya'){echo ' ('.$data->f5_v1b.')';} ?></td></tr>
@@ -201,12 +220,12 @@
 
             <div class="box-header with-border">
               <h4 class="box-title">
-                <a data-toggle="collapse" data-parent="#accordion" href="#collapseSix">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapseSix<?php echo $data->id_pasien; ?>">
                   Riwayat Penyakit Dahulu
                 </a>
               </h4>
             </div>
-            <div id="collapseSix" class="panel-collapse collapse">
+            <div id="collapseSix<?php echo $data->id_pasien; ?>" class="panel-collapse collapse">
               <div class="box-body">
                 <table class="table table-hover table-vcenter table-striped">
                   <tr><td><?php echo $label[54]->label_name ?></td><td>:</td><td><?php echo $data->f6; ?></td></tr>
@@ -216,12 +235,12 @@
 
             <div class="box-header with-border">
               <h4 class="box-title">
-                <a data-toggle="collapse" data-parent="#accordion" href="#collapseSeven">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapseSeven<?php echo $data->id_pasien; ?>">
                 Riwayat Perawatan di RS sebelumnya
                 </a>
               </h4>
             </div>
-            <div id="collapseSeven" class="panel-collapse collapse">
+            <div id="collapseSeven<?php echo $data->id_pasien; ?>" class="panel-collapse collapse">
               <div class="box-body">
                 <table class="table table-hover table-vcenter table-striped">
                   <tr><td><?php echo $label[55]->label_name ?></td><td>:</td><td><?php echo $data->f7_v1; 
@@ -244,12 +263,12 @@
 
             <div class="box-header with-border">
               <h4 class="box-title">
-                <a data-toggle="collapse" data-parent="#accordion" href="#collapseEight">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapseEight<?php echo $data->id_pasien; ?>">
                 Pemeriksaan penunjang
                 </a>
               </h4>
             </div>
-            <div id="collapseEight" class="panel-collapse collapse">
+            <div id="collapseEight<?php echo $data->id_pasien; ?>" class="panel-collapse collapse">
               <div class="box-body">
                 <table class="table table-hover table-vcenter table-striped">
                   <tr><td><?php echo $label[62]->label_name ?></td><td>:</td><td><?php echo $data->f8_v1; 
@@ -298,12 +317,12 @@
 
             <div class="box-header with-border">
               <h4 class="box-title">
-                <a data-toggle="collapse" data-parent="#accordion" href="#collapseNine">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapseNine<?php echo $data->id_pasien; ?>">
                 Diagnosis
                 </a>
               </h4>
             </div>
-            <div id="collapseNine" class="panel-collapse collapse">
+            <div id="collapseNine<?php echo $data->id_pasien; ?>" class="panel-collapse collapse">
               <div class="box-body">
                 <table class="table table-hover table-vcenter table-striped">
                   <tr><td><?php echo $label[66]->label_name ?></td><td>:</td><td><?php echo $data->f9_v1; ?></td></tr>
@@ -316,12 +335,12 @@
 
             <div class="box-header with-border">
               <h4 class="box-title">
-                <a data-toggle="collapse" data-parent="#accordion" href="#collapseTen">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapseTen<?php echo $data->id_pasien; ?>">
                 Faktor kontak/paparan
                 </a>
               </h4>
             </div>
-            <div id="collapseTen" class="panel-collapse collapse">
+            <div id="collapseTen<?php echo $data->id_pasien; ?>" class="panel-collapse collapse">
               <div class="box-body">
                 <table class="table table-hover table-vcenter table-striped">
                   <tr><td style="width: 200px"><?php echo $label[70]->label_name ?></td><td>:</td><td><?php echo $data->f10_v1; 
@@ -361,6 +380,45 @@
                   <tr><td><?php echo $label[83]->label_name ?></td><td>:</td><td><?php echo $data->f10_v14; if($data->f10_v14=='Ya'){echo ' ('.$data->f10_v15.')';} ?></td></tr>
                   <tr><td><?php echo $label[84]->label_name ?></td><td>:</td><td><?php echo $data->f10_v16; ?></td></tr>
                 </table>
+              </div>
+            </div>
+
+            <div class="box-header with-border">
+              <h4 class="box-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapseElv<?php echo $data->id_pasien; ?>">
+                Daftar Kontak Pasien (dengan orang-orang dekat)
+                </a>
+              </h4>
+            </div>
+            <div id="collapseElv<?php echo $data->id_pasien; ?>" class="panel-collapse collapse">
+              <div class="box-body">
+                <?php 
+                  $dat1 = explode('; ', $data->f11_v1);
+                  $dat2 = explode('; ', $data->f11_v2);
+                  $dat3 = explode('; ', $data->f11_v3);
+                  $dat4 = explode('; ', $data->f11_v4);
+                  $dat5 = explode('; ', $data->f11_v5);
+                  $dat6 = explode('; ', $data->f11_v6);
+                  $dat7 = explode('; ', $data->f11_v7);
+                  
+                  $a=0;
+                  while ($a < count($dat1)) { ?>
+                    <h4><b>Kontak <?php echo $a+1 ?></b></h4>
+                    <table class="table table-hover table-vcenter table-striped">
+                      <tr><td><?php echo $label[85]->label_name ?></td><td>:</td><td><?php echo $dat1[$a];?></td></tr>
+                      <tr><td><?php echo $label[86]->label_name ?></td><td>:</td><td><?php echo $dat2[$a]; ?></td></tr>
+                      <tr><td><?php echo $label[87]->label_name ?></td><td>:</td><td><?php echo $dat3[$a]; ?></td></tr>
+                      <tr><td><?php echo $label[88]->label_name ?></td><td>:</td><td><?php echo $dat4[$a]; ?></td></tr>
+                      <tr><td><?php echo $label[89]->label_name ?></td><td>:</td><td><?php echo $dat5[$a]; ?></td></tr>
+                      <tr><td><?php echo $label[90]->label_name ?></td><td>:</td><td><?php echo $dat6[$a]; ?></td></tr>
+                      <tr><td><?php echo $label[91]->label_name ?></td><td>:</td><td><?php echo $dat7[$a]; ?></td></tr>
+                    </table>
+                    <hr>
+                 <?php 
+                 $a++;
+                  }
+                ?>
+                
               </div>
             </div>
 

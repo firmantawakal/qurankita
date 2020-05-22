@@ -38,22 +38,22 @@
                         <td><?php echo $data->nama_user ?></td>
                     </tr>
                     <div id="modal-fade<?php echo $data->username; ?>" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
-                          <div class="modal-dialog">
-                              <div class="modal-content">
-                                  <div class="modal-header">
-                                      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                                      <h3 class="modal-title"><strong>Konfirmasi</strong></h3>
-                                  </div>
-                                  <div class="modal-body">
-                                      Anda yakin ingin menghapus data?
-                                  </div>
-                                  <div class="modal-footer">
-                                      <a href="<?php echo site_url('user/delete/'.$data->username) ?>" class="btn btn-effect-ripple btn-danger">Ya</a>
-                                      <button type="button" class="btn btn-effect-ripple btn-default" data-dismiss="modal">Tidak</button>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                    <h3 class="modal-title"><strong>Konfirmasi</strong></h3>
+                                </div>
+                                <div class="modal-body">
+                                    Anda yakin ingin menghapus data?
+                                </div>
+                                <div class="modal-footer">
+                                    <a href="<?php echo site_url('user/delete/'.$data->username) ?>" class="btn btn-effect-ripple btn-danger">Ya</a>
+                                    <button type="button" class="btn btn-effect-ripple btn-default" data-dismiss="modal">Tidak</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 <?php
                 }
                 ?>

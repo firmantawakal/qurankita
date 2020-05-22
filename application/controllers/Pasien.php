@@ -20,8 +20,15 @@ class Pasien extends CI_Controller {
 		$data['pasien'] = $this->m_pasien->get_all();
 		$data['label'] = $this->m_pasien->get_table('label');
 		
-		// echo json_encode($data['label']);die;
 		$this->template->load('template','pasien/v_pasien_list',$data);
+	}
+
+	public function test(){
+		$this->load->view('pasien/testjs');
+	}
+
+	public function test2(){
+		echo json_encode($_POST['aa']);die;
 	}
 
 	public function create()
@@ -36,6 +43,7 @@ class Pasien extends CI_Controller {
 
 	public function create_action()
 	{
+
 		$f6 = $this->input->post('form6',TRUE);
 		$f6val = null;
 		if($f6!=''){
@@ -51,43 +59,43 @@ class Pasien extends CI_Controller {
 		$form11_1 = $this->input->post('form11_1',TRUE);
 		$f11_v1 = null;
 		if($form11_1!=''){
-			$f11_v1 = implode(', ', $form11_1);
+			$f11_v1 = implode('; ', $form11_1);
 		};
 
 		$form11_2 = $this->input->post('form11_2',TRUE);
 		$f11_v2 = null;
 		if($form11_2!=''){
-			$f11_v2 = implode(', ', $form11_2);
+			$f11_v2 = implode('; ', $form11_2);
 		};
 
 		$form11_3 = $this->input->post('form11_3',TRUE);
 		$f11_v3 = null;
 		if($form11_3!=''){
-			$f11_v3 = implode(', ', $form11_3);
+			$f11_v3 = implode('; ', $form11_3);
 		};
 
 		$form11_4 = $this->input->post('form11_4',TRUE);
 		$f11_v4 = null;
 		if($form11_4!=''){
-			$f11_v4 = implode(', ', $form11_4);
+			$f11_v4 = implode('; ', $form11_4);
 		};
 
 		$form11_5 = $this->input->post('form11_5',TRUE);
 		$f11_v5 = null;
 		if($form11_5!=''){
-			$f11_v5 = implode(', ', $form11_5);
+			$f11_v5 = implode('; ', $form11_5);
 		};
 
 		$form11_6 = $this->input->post('form11_6',TRUE);
 		$f11_v6 = null;
 		if($form11_6!=''){
-			$f11_v6 = implode(', ', $form11_6);
+			$f11_v6 = implode('; ', $form11_6);
 		};
 
 		$form11_7 = $this->input->post('form11_7',TRUE);
 		$f11_v7 = null;
 		if($form11_7!=''){
-			$f11_v7 = implode(', ', $form11_7);
+			$f11_v7 = implode('; ', $form11_7);
 		};
 
 	   $data = array(
@@ -119,6 +127,7 @@ class Pasien extends CI_Controller {
 			'f2_v15' => $this->input->post('form2_15',TRUE),
 			'f2_v16' => $this->input->post('form2_16',TRUE),
 			'f2_v17' => $this->input->post('form2_17',TRUE),
+			'f2_v18' => $this->input->post('form2_18',TRUE),
 
 			'f3_v1' => $this->input->post('form3_1',TRUE),
 			'f3_v2' => $this->input->post('form3_2',TRUE),
@@ -216,7 +225,7 @@ class Pasien extends CI_Controller {
 			'f11_v7' => $f11_v7,
 		);
 
-	    echo json_encode($form11_1);die;
+	    // echo json_encode($data);die;
 
 		$this->m_pasien->insert('pasien', $data);
 		// $this->session->set_flashdata('message', '
@@ -296,15 +305,15 @@ class Pasien extends CI_Controller {
 
     public function delete($id)
     {
-        $row = $this->m_user->get_by_id($id);
+        $row = $this->m_pasien->get_by_id($id);
 
         if ($row) {
-            $this->m_user->delete($id);
-            $this->session->set_flashdata('message', '
-                <div class="alert alert-success alert-dismissable">
-                    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-                    <h4>    <i class="icon fa fa-check"></i> Sukses!</h4>Data Berhasil Dihapus
-                </div>');
+            $this->m_pasien->delete($id);
+            // $this->session->set_flashdata('message', '
+            //     <div class="alert alert-success alert-dismissable">
+            //         <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+            //         <h4>    <i class="icon fa fa-check"></i> Sukses!</h4>Data Berhasil Dihapus
+            //     </div>');
             redirect($_SERVER['HTTP_REFERER']);
         } else {
 			$this->session->set_flashdata('message', 'Record Not Found');
