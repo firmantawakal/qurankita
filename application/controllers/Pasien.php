@@ -17,7 +17,11 @@ class Pasien extends CI_Controller {
 	}
 	
 	public function index(){
-		$data['pasien'] = $this->m_pasien->get_all();
+		if ($this->session->userdata('role')=='admin') {
+			$data['pasien'] = $this->m_pasien->get_all();
+		}else{
+			$data['pasien'] = $this->m_pasien->get_all_by_id($this->session->userdata('role'));
+		}
 		$data['label'] = $this->m_pasien->get_table('label');
 		
 		$this->template->load('template','pasien/v_pasien_list',$data);
@@ -99,6 +103,7 @@ class Pasien extends CI_Controller {
 		};
 
 	   $data = array(
+		   	'role'  => $this->session->userdata('role'),
 			'f1_v1' => $this->input->post('form11',TRUE),
 			'f1_v2' => $this->input->post('form12',TRUE),
 			'f1_v3' => $this->input->post('form13',TRUE),

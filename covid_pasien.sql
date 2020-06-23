@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 22, 2020 at 04:54 PM
+-- Generation Time: Jun 23, 2020 at 05:25 AM
 -- Server version: 10.1.38-MariaDB
 -- PHP Version: 5.6.40
 
@@ -7378,6 +7378,7 @@ INSERT INTO `label` (`id_label`, `label_form`, `label_name`) VALUES
 CREATE TABLE `pasien` (
   `id_pasien` int(10) NOT NULL,
   `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `role` varchar(20) NOT NULL,
   `f1_v1` varchar(60) DEFAULT NULL,
   `f1_v2` varchar(60) DEFAULT NULL,
   `f1_v3` varchar(60) DEFAULT NULL,
@@ -8096,8 +8097,13 @@ CREATE TABLE `user` (
 
 INSERT INTO `user` (`username`, `password`, `nama_user`) VALUES
 ('admin', 'A08CD8249563170E809DF6340AA1B2E3', 'ADMIN SATGAS'),
-('admin2', 'c84258e9c39059a89ab77d846ddab909', 'admin2'),
-('bunga', '80219675a4b4f2bb1fa1e48fe8397f30', 'bunga');
+('bukitkapur', 'a015ac76dbd58fa98e3023822dd9b31c', 'Puskesmas Bukit Kapur'),
+('dumaibarat', 'fe6832e7739dd5256315430d6fa45c94', 'Puskesmas Dumai Barat'),
+('dumaikota', '9ee2fbaaef765a976fb4755c4e7ae106', 'Puskesmas Dumai Kota'),
+('dumaiselatan', '96353c4abd8f6f3e9ac88f9ef1c5ae54', 'Puskesmas Dumai Selatan'),
+('dumaitimur', '29b2e7426ad8cc5d88ca319ae4f86301', 'Puskesmas Dumai Timur'),
+('medangkampai', 'af974bbd2a4fc74a168269eaacc6884c', 'Puskesmas Medang Kampai'),
+('sungaisembilan', 'e0f2ce479a8ca281ff3b87b8c1ec9cf9', 'Puskesmas Sungai Sembilan');
 
 -- --------------------------------------------------------
 
@@ -88776,7 +88782,7 @@ ALTER TABLE `label`
 -- AUTO_INCREMENT for table `pasien`
 --
 ALTER TABLE `pasien`
-  MODIFY `id_pasien` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `id_pasien` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- Constraints for dumped tables

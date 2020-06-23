@@ -1,22 +1,28 @@
-<div id="page-content">
-   <!-- Responsive Full Block -->
-   <div class="block">
-        <!-- Responsive Full Title -->
-        <div class="block-title">
-            <h2><?php echo $title ?></h2>
+
+<!-- Content Header (Page header) -->
+<section class="content-header">
+  <h1>
+    <?php echo $title ?>
+  </h1>
+</section>
+
+<section class="content">
+  <div id="message">
+    <?php //echo @$this->session->userdata('message') <> '' ? @$this->session->userdata('message') : ''; ?>
+  </div>
+  <div class="row">
+    <div class="col-xs-12">
+      <div class="box">
+      <div class="box-header">
         </div>
-        <!-- Alert -->
-        <div style="margin: 15px"  id="message">
-            <?php echo $this->session->userdata('message') <> '' ? $this->session->userdata('message') : ''; ?>
-        </div>
-        <!-- Basic Form Elements Content -->
+        <!-- /.box-header -->
+        <div class="box-body">
         <form action="<?php echo $action ?>" method="post" enctype="multipart/form-data" class="form-horizontal">
             <input type="hidden" name="f_username_hid" value="<?php echo $username_hid ?>" class="form-control">
-           
             <div class="form-group">
                 <label class="col-md-3 control-label" >Username</label>
                 <div class="col-md-9">
-                    <input type="text" name="f_username" class="form-control" value="<?php echo $username ?>" placeholder="Username">
+                    <input type="text" name="f_username" class="form-control" value="<?php echo $username ?>" placeholder="Username" readonly>
                 </div>
             </div>
             <div class="form-group">
@@ -38,5 +44,8 @@
                 </div>
             </div>
         </form>
+      </div>
+      </div>
     </div>
-</div>
+  </div>
+</section>

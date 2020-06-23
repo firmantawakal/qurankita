@@ -7,10 +7,31 @@ class m_pasien extends CI_Model {
         return $this->db->get($table)->result();
     }
     
-    function get_by_id($id)
+    function get_all_by_id()
     {
-        $this->db->where('id_pasien', $id);
-        return $this->db->get('pasien')->row();
+        $name = $this->session->userdata('role');
+        $sql = "SELECT a.*,
+                b.name as prov_fy, 
+                c.name as kab_fy, 
+                d.name as kec_fy, 
+                e.name as kel_fy, 
+                f.name as prov_p, 
+                g.name as kab_p, 
+                h.name as kec_p, 
+                i.name as kel_p 
+                from 
+                pasien a, provinces b, regencies c, districts d, villages e, provinces f, regencies g, districts h, villages i
+                where a.f1_v4 = b.id 
+                and a.f1_v5 = c.id
+                and a.f1_v6 = d.id
+                and a.f1_v7 = e.id
+                and a.f2_v10 = f.id
+                and a.f2_v11 = g.id
+                and a.f2_v12 = h.id
+                and a.f2_v13 = i.id
+                and a.role = '$name'
+                order by f1_v10 DESC";
+		return $this->db->query($sql)->result();
 	}
 	
 	function get_all()

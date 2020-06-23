@@ -31,7 +31,7 @@
 							<div class="col-md-4">
 								<div class="form-group">
 									<label>Nama Fasilitas Pelayanan Kesehatan</label>
-									<input type="text" class="form-control" name="form13" value="" required>
+									<input type="text" class="form-control" name="form13" value="<?php echo ($this->session->userdata('role')!='admin') ? $this->session->userdata('nama-user') : '' ; ?>" <?php echo ($this->session->userdata('role')!='admin') ? 'readonly' : '' ; ?> required>
 								</div>
 							</div>
 							<div class="col-md-3">

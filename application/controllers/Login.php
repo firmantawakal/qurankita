@@ -23,8 +23,8 @@ Class Login extends CI_Controller{
       $data = $this->m_login->get_by_id($username);
 			$data_session = array(
 				'nama' => $username,
-				'level' => $data->level,
-  			'nama-user' => $data->nama_user,
+				'nama-user' => $data->nama_user,
+				'role' => $username,
 				'status' => "login"
 				);
 
