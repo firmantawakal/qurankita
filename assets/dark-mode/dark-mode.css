@@ -1,0 +1,42 @@
+:root {
+  --primary-color: #302AE6;
+  --secondary-color: #eeeef1;
+  --font-color: #424242;
+  --bg-color: #ffffff;
+  --index-color: #045185;
+}
+
+[data-theme="dark"] {
+  --primary-color: #9A97F3;
+  --secondary-color: #5a5a5a;
+  --font-color: #e1e1ff;
+  --bg-color: #161625;
+  --index-color: #404657;
+}
+
+@font-face {
+  font-family: 'lpmq';
+  src: url('../LPMQ.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+}  
+
+#btnTop {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  font-size: 15px;
+  border: none;
+  outline: none;
+  background-color: #FA6121 ;
+  color: white;
+  cursor: pointer;
+  padding: 14px;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+
+#btnTop:hover {
+  background-color: rgb(211, 84, 30);
+}
