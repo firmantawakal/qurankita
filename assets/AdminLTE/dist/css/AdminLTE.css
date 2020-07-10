@@ -18,12 +18,19 @@ body {
   height: 100%;
 }
 body {
+<<<<<<< HEAD
   font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 450;
   font-size: 16px !important;
   overflow-x: hidden;
   overflow-y: auto;
   color: var(--font-color);
+=======
+  font-family: Ubuntu, "times new roman", times, roman, serif;
+  font-weight: 420;
+  overflow-x: hidden;
+  overflow-y: auto;
+>>>>>>> parent of a702ff9... last commit
 }
 /* Layout */
 .wrapper {
@@ -89,6 +96,7 @@ body {
 }
 .content-wrapper {
   min-height: 100%;
+<<<<<<< HEAD
   background-color: var(--bg-color); 
   /* #ecf0f5 */
   z-index: 800;
@@ -98,6 +106,16 @@ body {
   padding: 15px;
   color: var(--font-color);
   border-top: 1px solid var(--secondary-color);
+=======
+  background-color: #ecf0f5;
+  z-index: 800;
+}
+.main-footer {
+  background: #fff;
+  padding: 15px;
+  color: #444;
+  border-top: 1px solid #d2d6de;
+>>>>>>> parent of a702ff9... last commit
 }
 /* Fixed layout */
 .fixed .main-header,
@@ -117,7 +135,11 @@ body {
 @media (max-width: 767px) {
   .fixed .content-wrapper,
   .fixed .right-side {
+<<<<<<< HEAD
     /* padding-top: 100px; */
+=======
+    padding-top: 100px;
+>>>>>>> parent of a702ff9... last commit
   }
 }
 .fixed.layout-boxed .wrapper {
@@ -161,7 +183,11 @@ h6,
 .h4,
 .h5,
 .h6 {
+<<<<<<< HEAD
   font-family: 'Lato', Roboto;
+=======
+  font-family: Ubuntu, "times new roman", times, roman, serif;
+>>>>>>> parent of a702ff9... last commit
 }
 /* General Links */
 a {
@@ -198,7 +224,11 @@ a:focus {
   -o-transition: margin-left 0.3s ease-in-out;
   transition: margin-left 0.3s ease-in-out;
   margin-bottom: 0;
+<<<<<<< HEAD
   /* margin-left: 230px; */
+=======
+  margin-left: 230px;
+>>>>>>> parent of a702ff9... last commit
   border: none;
   min-height: 50px;
   border-radius: 0;
@@ -253,7 +283,11 @@ a:focus {
   background-color: transparent;
   background-image: none;
   padding: 15px 15px;
+<<<<<<< HEAD
   font-family: fontAwesome;
+=======
+  font-family: Ubuntu, "times new roman", times, roman, serif;
+>>>>>>> parent of a702ff9... last commit
 }
 .main-header .sidebar-toggle:before {
   content: "\f0c9";
@@ -293,7 +327,11 @@ a:focus {
   line-height: 50px;
   text-align: center;
   width: 230px;
+<<<<<<< HEAD
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+=======
+  font-family: Ubuntu, "times new roman", times, roman, serif;
+>>>>>>> parent of a702ff9... last commit
   padding: 0 15px;
   font-weight: 300;
   overflow: hidden;
@@ -426,7 +464,11 @@ a:focus {
 }
 @media (max-width: 767px) {
   .main-sidebar {
+<<<<<<< HEAD
     /* padding-top: 100px; */
+=======
+    padding-top: 100px;
+>>>>>>> parent of a702ff9... last commit
   }
 }
 @media (max-width: 767px) {
@@ -510,7 +552,11 @@ a:focus {
   padding: 0;
 }
 .sidebar-menu > li > a {
+<<<<<<< HEAD
   padding: 12px 15px 12px 15px;
+=======
+  padding: 12px 5px 12px 15px;
+>>>>>>> parent of a702ff9... last commit
   display: block;
 }
 .sidebar-menu > li > a > .fa,
@@ -1532,11 +1578,19 @@ a:focus {
 .box {
   position: relative;
   border-radius: 3px;
+<<<<<<< HEAD
   /* background: #ffffff; */
   border-top: 3px solid #d2d6de;
   margin-bottom: 20px;
   width: 100%;
   /* box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1); */
+=======
+  background: #ffffff;
+  border-top: 3px solid #d2d6de;
+  margin-bottom: 20px;
+  width: 100%;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+>>>>>>> parent of a702ff9... last commit
 }
 .box.box-primary {
   border-top-color: #3c8dbc;
@@ -1561,7 +1615,11 @@ a:focus {
   display: none;
 }
 .box .nav-stacked > li {
+<<<<<<< HEAD
   border-bottom: 1px solid var(--secondary-color);
+=======
+  border-bottom: 1px solid #f4f4f4;
+>>>>>>> parent of a702ff9... last commit
   margin: 0;
 }
 .box .nav-stacked > li:last-of-type {
@@ -2223,9 +2281,15 @@ a:focus {
   display: block;
 }
 .btn-default {
+<<<<<<< HEAD
   background-color: var(--secondary-color);
   color: var(--font-color);
   /* border-color: #ddd; */
+=======
+  background-color: #f4f4f4;
+  color: #444;
+  border-color: #ddd;
+>>>>>>> parent of a702ff9... last commit
 }
 .btn-default:hover,
 .btn-default:active,
@@ -2233,8 +2297,13 @@ a:focus {
   background-color: #e7e7e7;
 }
 .btn-primary {
+<<<<<<< HEAD
   background-color: var(--index-color);
   border-color: var(--index-color);
+=======
+  background-color: #3c8dbc;
+  border-color: #367fa9;
+>>>>>>> parent of a702ff9... last commit
 }
 .btn-primary:hover,
 .btn-primary:active,
@@ -2446,7 +2515,11 @@ a:focus {
   border-radius: 0;
   border-top: 0;
   border-left: 3px solid transparent;
+<<<<<<< HEAD
   color: var(--font-color);
+=======
+  color: #444;
+>>>>>>> parent of a702ff9... last commit
 }
 .nav-stacked > li.active > a,
 .nav-stacked > li.active > a:hover {
@@ -4480,7 +4553,11 @@ table.text-center th {
 .bg-light-blue,
 .label-primary,
 .modal-primary .modal-body {
+<<<<<<< HEAD
   background-color: var(--index-color) !important;
+=======
+  background-color: #3c8dbc !important;
+>>>>>>> parent of a702ff9... last commit
 }
 .bg-green,
 .callout.callout-success,

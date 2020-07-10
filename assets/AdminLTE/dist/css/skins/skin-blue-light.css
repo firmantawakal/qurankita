@@ -59,10 +59,17 @@
 .skin-blue-light .wrapper,
 .skin-blue-light .main-sidebar,
 .skin-blue-light .left-side {
+<<<<<<< HEAD
   background-color: var(--secondary-color);
 }
 .skin-blue-light .main-sidebar {
   border-right: 1px solid var(--secondary-color);
+=======
+  background-color: #f9fafc;
+}
+.skin-blue-light .main-sidebar {
+  border-right: 1px solid #d2d6de;
+>>>>>>> parent of a702ff9... last commit
 }
 .skin-blue-light .user-panel > .info,
 .skin-blue-light .user-panel > .info > a {
@@ -83,8 +90,13 @@
 }
 .skin-blue-light .sidebar-menu > li:hover > a,
 .skin-blue-light .sidebar-menu > li.active > a {
+<<<<<<< HEAD
   color: var(--font-color);
   background: var(--secondary-color);
+=======
+  color: #000000;
+  background: #f4f4f5;
+>>>>>>> parent of a702ff9... last commit
 }
 .skin-blue-light .sidebar-menu > li.active {
   border-left-color: #3c8dbc;
@@ -96,7 +108,11 @@
   background: #f4f4f5;
 }
 .skin-blue-light .sidebar a {
+<<<<<<< HEAD
   color: var(--font-color);;
+=======
+  color: #444444;
+>>>>>>> parent of a702ff9... last commit
 }
 .skin-blue-light .sidebar a:hover {
   text-decoration: none;

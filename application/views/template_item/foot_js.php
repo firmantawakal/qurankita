@@ -18,7 +18,11 @@
 <!-- Select2 -->
 <script src="<?php echo base_url(); ?>assets/AdminLTE/bower_components/select2/dist/js/select2.full.min.js"></script>
 
+<<<<<<< HEAD
 <script src="<?php echo base_url(); ?>assets/dark-mode/dark-mode.js"></script>
+=======
+<script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.33.1/sweetalert2.min.js"></script>
+>>>>>>> parent of a702ff9... last commit
 
 <!-- page script -->
 <script>
@@ -49,6 +53,7 @@
           orientation: 'bottom'
         });
     });
+<<<<<<< HEAD
   </script>
 
 <script type="text/javascript">
@@ -85,3 +90,21 @@ function topFunction() {
   document.documentElement.scrollTop = 0;
 }
 </script>
+=======
+
+    <?php if($this->session->flashdata('msg')=='success'){ ?>
+      swal({
+      title: "Sukses!",
+      text: "Kuesioner berhasil disimpan. Terimakasih atas partisipasi anda!",
+      type: "success"
+      });
+    <?php }elseif($this->session->flashdata('msg')=='error'){ ?>
+      swal({
+      title: "Gagal Menyimpan!",
+      text: "Anda sudah melakukan input kuesioner",
+      type: "warning"
+      });
+    <?php } ?>
+  </script>
+
+>>>>>>> parent of a702ff9... last commit

@@ -1,4 +1,9 @@
+<<<<<<< HEAD
 Copyright jQuery Foundation and other contributors, https://jquery.org/
+=======
+Copyright 2007, 2014 jQuery Foundation and other contributors,
+https://jquery.org/
+>>>>>>> parent of a702ff9... last commit
 
 This software consists of voluntary contributions made by many
 individuals. For exact contribution history, see the revision history
@@ -40,4 +45,8 @@ CC0: http://creativecommons.org/publicdomain/zero/1.0/
 All files located in the node_modules and external directories are
 externally maintained libraries used by this software which have their
 own licenses; we recommend you read them, as their terms may differ from
+<<<<<<< HEAD
 the terms above.
+=======
+the terms above.
+>>>>>>> parent of a702ff9... last commit

@@ -2,6 +2,7 @@
 	"name": "jquery-ui",
 	"title": "jQuery UI",
 	"description": "A curated set of user interface interactions, effects, widgets, and themes built on top of the jQuery JavaScript Library.",
+<<<<<<< HEAD
 	"version": "1.12.1",
 	"homepage": "http://jqueryui.com",
 	"author": {
@@ -9,6 +10,14 @@
 		"url": "https://github.com/jquery/jquery-ui/blob/1.12.1/AUTHORS.txt"
 	},
 	"main": "ui/widget.js",
+=======
+	"version": "1.11.4",
+	"homepage": "http://jqueryui.com",
+	"author": {
+		"name": "jQuery Foundation and other contributors",
+		"url": "https://github.com/jquery/jquery-ui/blob/1-11-stable/AUTHORS.txt"
+	},
+>>>>>>> parent of a702ff9... last commit
 	"maintainers": [
 		{
 			"name": "Scott González",
@@ -21,6 +30,19 @@
 			"url": "http://bassistance.de"
 		},
 		{
+<<<<<<< HEAD
+=======
+			"name": "Kris Borchers",
+			"email": "kris.borchers@gmail.com",
+			"url": "http://krisborchers.com"
+		},
+		{
+			"name": "Corey Frang",
+			"email": "gnarf37@gmail.com",
+			"url": "http://gnarf.net"
+		},
+		{
+>>>>>>> parent of a702ff9... last commit
 			"name": "Mike Sherov",
 			"email": "mike.sherov@gmail.com",
 			"url": "http://mike.sherov.com"
@@ -34,17 +56,21 @@
 			"name": "Felix Nagel",
 			"email": "info@felixnagel.com",
 			"url": "http://www.felixnagel.com"
+<<<<<<< HEAD
 		},
 		{
 			"name": "Alex Schmitz",
 			"email": "arschmitz@gmail.com",
 			"url": "https://github.com/arschmitz"
+=======
+>>>>>>> parent of a702ff9... last commit
 		}
 	],
 	"repository": {
 		"type": "git",
 		"url": "git://github.com/jquery/jquery-ui.git"
 	},
+<<<<<<< HEAD
 	"bugs": "https://bugs.jqueryui.com/",
 	"license": "MIT",
 	"scripts": {
@@ -69,6 +95,25 @@
 		"load-grunt-tasks": "3.4.0",
 		"rimraf": "2.5.1",
 		"testswarm": "1.1.0"
+=======
+	"bugs": "http://bugs.jqueryui.com/",
+	"licenses": [
+		{
+			"type": "MIT",
+			"url": "https://github.com/jquery/jquery-ui/blob/1-11-stable/LICENSE.txt"
+		}
+	],
+	"dependencies": {},
+	"devDependencies": {
+		"grunt": "~0.3.17",
+		"grunt-css": "0.2.0",
+		"grunt-compare-size": "0.1.4",
+		"grunt-html": "0.1.1",
+		"grunt-junit": "0.1.5",
+		"grunt-git-authors": "1.0.0",
+		"rimraf": "2.0.1",
+		"testswarm": "0.3.0"
+>>>>>>> parent of a702ff9... last commit
 	},
 	"keywords": []
 }

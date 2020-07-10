@@ -28,7 +28,11 @@ Chi Cheng <cloudream@gmail.com>
 Ca-Phun Ung <pazu2k@gmail.com>
 Ariel Flesler <aflesler@gmail.com>
 Maggie Wachs <maggie@filamentgroup.com>
+<<<<<<< HEAD
 Scott Jehl <scottjehl@gmail.com>
+=======
+Scott Jehl <scott@scottjehl.com>
+>>>>>>> parent of a702ff9... last commit
 Todd Parker <todd@filamentgroup.com>
 Andrew Powell <andrew@shellscape.org>
 Brant Burnett <btburnett3@gmail.com>
@@ -52,7 +56,11 @@ Eyal Kobrigo <kobrigo@hotmail.com>
 Tiago Freire <tiago.freire@gmail.com>
 Diego Tres <diegotres@gmail.com>
 Holger Rüprich <holger@rueprich.de>
+<<<<<<< HEAD
 Ziling Zhao <zilingzhao@gmail.com>
+=======
+Ziling Zhao <zizhao@cisco.com>
+>>>>>>> parent of a702ff9... last commit
 Mike Alsup <malsup@gmail.com>
 Robson Braga Araujo <robsonbraga@gmail.com>
 Pierre-Henri Ausseil <ph.ausseil@gmail.com>
@@ -80,7 +88,11 @@ Kyle Wilkinson <kai@wikyd.org>
 Khaled AlHourani <me@khaledalhourani.com>
 Marian Rudzynski <mr@impaled.org>
 Jean-Francois Remy <jeff@melix.org>
+<<<<<<< HEAD
 Doug Blood <dougblood@gmail.com>
+=======
+Doug Blood
+>>>>>>> parent of a702ff9... last commit
 Filippo Cavallarin <filippo.cavallarin@codseq.it>
 Heiko Henning <heiko@thehennings.ch>
 Aliaksandr Rahalevich <saksmlz@gmail.com>
@@ -140,8 +152,12 @@ Wesley Walser <waw325@gmail.com>
 Kouhei Sutou <kou@clear-code.com>
 Karl Kirch <karlkrch@gmail.com>
 Chris Kelly <ckdake@ckdake.com>
+<<<<<<< HEAD
 Jason Oster <jay@kodewerx.org>
 Felix Nagel <info@felixnagel.com>
+=======
+Jay Oster <jay@loyalize.com>
+>>>>>>> parent of a702ff9... last commit
 Alexander Polomoshnov <alex.polomoshnov@gmail.com>
 David Leal <dgleal@gmail.com>
 Igor Milla <igor.fsp.milla@gmail.com>
@@ -151,14 +167,20 @@ Marwan Al Jubeh <marwan.aljubeh@gmail.com>
 Milan Broum <midlis@googlemail.com>
 Sebastian Sauer <info@dynpages.de>
 Gaëtan Muller <m.gaetan89@gmail.com>
+<<<<<<< HEAD
 Michel Weimerskirch <michel@weimerskirch.net>
+=======
+>>>>>>> parent of a702ff9... last commit
 William Griffiths <william@ycymro.com>
 Stojce Slavkovski <stojce@gmail.com>
 David Soms <david.soms@gmail.com>
 David De Sloovere <david.desloovere@outlook.com>
 Michael P. Jung <michael.jung@terreon.de>
 Shannon Pekary <spekary@gmail.com>
+<<<<<<< HEAD
 Dan Wellman <danwellman@hotmail.com>
+=======
+>>>>>>> parent of a702ff9... last commit
 Matthew Edward Hutton <meh@corefiling.co.uk>
 James Khoury <james@jameskhoury.com>
 Rob Loach <robloach@gmail.com>
@@ -211,7 +233,10 @@ Bernhard Sirlinger <bernhard.sirlinger@tele2.de>
 Jared A. Scheel <jared@jaredscheel.com>
 Rafael Xavier de Souza <rxaviers@gmail.com>
 John Chen <zhang.z.chen@intel.com>
+<<<<<<< HEAD
 Robert Beuligmann <robertbeuligmann@gmail.com>
+=======
+>>>>>>> parent of a702ff9... last commit
 Dale Kocian <dale.kocian@gmail.com>
 Mike Sherov <mike.sherov@gmail.com>
 Andrew Couch <andy@couchand.com>
@@ -255,7 +280,11 @@ Gan Eng Chin <engchin.gan@gmail.com>
 Gabriel Schulhof <gabriel.schulhof@intel.com>
 Alexander Schmitz <arschmitz@gmail.com>
 Vilhjálmur Skúlason <vis@dmm.is>
+<<<<<<< HEAD
 Siebrand Mazeland <siebrand@kitano.nl>
+=======
+Siebrand Mazeland <s.mazeland@xs4all.nl>
+>>>>>>> parent of a702ff9... last commit
 Mohsen Ekhtiari <mohsenekhtiari@yahoo.com>
 Pere Orga <gotrunks@gmail.com>
 Jasper de Groot <mail@ugomobi.com>
@@ -285,6 +314,7 @@ Frederik Elvhage <frederik.elvhage@googlemail.com>
 Will Holley <willholley@gmail.com>
 Uri Gilad <antishok@gmail.com>
 Richard Gibson <richard.gibson@gmail.com>
+<<<<<<< HEAD
 Simen Bekkhus <sbekkhus91@gmail.com>
 Chen Eshchar <eshcharc@gmail.com>
 Bruno Pérel <brunoperel@gmail.com>
@@ -331,3 +361,6 @@ Peter Dave Hello <hsu@peterdavehello.org>
 Johannes Schäfer <johnschaefer@gmx.de>
 Ville Skyttä <ville.skytta@iki.fi>
 Ryan Oriecuia <ryan.oriecuia@visioncritical.com>
+=======
+Simen Bekkhus <sbekkhus91@gmail.com>
+>>>>>>> parent of a702ff9... last commit
